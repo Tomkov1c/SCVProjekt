@@ -15,7 +15,7 @@
 	- ...
 
 - **Frontend**
-	- ✔️ Delujoča prijava
+	- 🟩 Delujoča prijava
 	- ...
 
 - **Backend**
