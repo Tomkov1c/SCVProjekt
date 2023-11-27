@@ -9,7 +9,7 @@
 
 ## ✔️ Načrt razvijanja
 - **Izgled**
-	- ✔️ Prijavna stran
+	- 🟩 Prijavna stran
 	- 🟨 Začetna stran
 	- 🟨 Glavna stran (dashboard)
 	- ...
@@ -19,7 +19,7 @@
 	- ...
 
 - **Backend**
-	- ✔️ Povezava s Microsoft Računom
+	- 🟩 Povezava s Microsoft Računom
 	- ⬛ Podatkovna baza
 	- ⬛ eAsistent API
 
