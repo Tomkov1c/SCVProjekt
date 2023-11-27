@@ -7,21 +7,21 @@
 # 🏫 Šolski Center Velenje - Projektna naloga
 *Spletna aplikacija, ki je namenjena dijakom Šolskega Centra Velenje, ki omogoča pregled nad dosežki, lestvicami za razne doseške, pregled med tekmovanji, ...*
 
-## ✅ Načrt razvijanja
+## ✔️ Načrt razvijanja
 - **Izgled**
-	- ✅ Prijavna stran
+	- ✔️ Prijavna stran
 	- 🟨 Začetna stran
 	- 🟨 Glavna stran (dashboard)
 	- ...
 
 - **Frontend**
-	- ✅ Delujoča prijava
+	- ✔️ Delujoča prijava
 	- ...
 
 - **Backend**
-	- 🟨 Povezava s Microsoft Računom
+	- ✔️ Povezava s Microsoft Računom
 	- ⬛ Podatkovna baza
-	- ...
+	- ⬛ eAsistent API
 
 <br>
 
