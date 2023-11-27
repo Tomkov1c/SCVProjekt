@@ -1,0 +1,109 @@
+@font-face {
+    font-family: Roboto-Black;
+    src: url(fonts/roboto/Roboto-Black.ttf);
+}
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(fonts/roboto/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(fonts/roboto/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: Roboto-Light;
+    src: url(fonts/roboto/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/roboto/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url(fonts/roboto/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: Poppins;
+    src: url(fonts/roboto/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: Poppins-Bold;
+    src: url(fonts/roboto/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: Poppins-Black;
+    src: url(fonts/roboto/Poppins-Black.ttf);
+}
+@font-face {
+    font-family: Poppins-Light;
+    src: url(fonts/roboto/Poppins-Light.ttf);
+}
+
+[data-theme="light"] {
+    
+    --colorBlack: #161925;
+    --colorWhite: #F5F5F5;
+    --colorText: #120c0e;
+    --colorBackground: #eef2f7;
+    --colorPrimary: #eb1565;
+    --colorSecundary: #e3eaf2;
+    --colorTerciary: #e2e6ea;
+    --colorAccent: #436298;
+    --colorHighlight: #E7D9C1;
+
+    --McolorAccent: #5B6776;
+    --McolorSecondary: #C8CED5;
+
+
+    --filterColorAccent: invert(38%) sepia(10%) saturate(2696%) hue-rotate(180deg) brightness(92%) contrast(86%);
+    --filterColorPrimary: invert(20%) sepia(72%) saturate(3760%) hue-rotate(324deg) brightness(91%) contrast(102%);
+    --filterColorSecundary: invert(91%) sepia(17%) saturate(117%) hue-rotate(176deg) brightness(102%) contrast(90%);
+    --filterColorText: invert(4%) sepia(7%) saturate(2116%) hue-rotate(289deg) brightness(94%) contrast(98%);
+    --filterColorBackground: invert(91%) sepia(3%) saturate(704%) hue-rotate(188deg) brightness(107%) contrast(94%);
+    --filterColorHighlight: invert(94%) sepia(7%) saturate(867%) hue-rotate(342deg) brightness(94%) contrast(92%);
+}
+[data-theme="dark"] {
+    
+
+    --colorText: #fcfcfd;
+    --colorBackground: #14161A;
+    --colorPrimary: #CF1F60;
+    --colorSecundary: #0d141c;
+    --colorTerciary: #24262b;
+    --colorAccent: #6786bc;
+
+    --McolorAccent: #5B6776;
+    --McolorSecondary: #C8CED5;
+
+
+    --filterColorAccent: invert(38%) sepia(10%) saturate(2696%) hue-rotate(180deg) brightness(92%) contrast(86%);
+    --filterColorPrimary: invert(20%) sepia(72%) saturate(3760%) hue-rotate(324deg) brightness(91%) contrast(102%);
+    --filterColorSecundary: invert(91%) sepia(17%) saturate(117%) hue-rotate(176deg) brightness(102%) contrast(90%);
+    --filterColorText: invert(4%) sepia(7%) saturate(2116%) hue-rotate(289deg) brightness(94%) contrast(98%);
+    --filterColorBackground: invert(91%) sepia(3%) saturate(704%) hue-rotate(188deg) brightness(107%) contrast(94%);
+    --filterColorHighlight: invert(94%) sepia(7%) saturate(867%) hue-rotate(342deg) brightness(94%) contrast(92%);
+}
+
+::selection {
+    background-color: var(--colorHighlight);
+    color: var(--colorText);
+}
+
+header {
+    margin: 0 0 0 0;
+    margin-top: 0v;
+}
+
+body {
+    margin: 0 0 0 0;
+}
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+.display_inline_flex {
+    display: inline-flex;
+    width: 100%;
+}

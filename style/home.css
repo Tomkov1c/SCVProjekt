@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    color: #CDCECF;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#sidenav {
+    background: #191919;
+    min-width: 260px;
+    display: flex;
+    flex-direction: column;
+}
+#main {
+    background: #15181d;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#username {
+
+}
+hr {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: #CDCECF;
+}
+.zgornji {
+    background: #856517;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+.zgornji a{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+.spodnji {
+    display: flex;
+    flex-direction: column;
+}
+.sideMenuButton {
+    background: #120c0e;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.sideMenuButton img {
+    width: 35px;
+    padding: 3px;
+}
+#uporabniki {
+    background: #5B6776;
+    height: 97%;
+    width: 60%;
+}
+.main-side {
+    background: #1976d2;
+    height: 97%;
+    width: 20%;
+    margin-left: 15px;
+}
+/*!!CE SPREMINJAS CSS NAPISI KAJ TOCNO, DA LAHKA JAZ (GAL PUNGARTNIK) VEM KK NAPISAT PHP!!*/

@@ -1,0 +1,194 @@
+header {
+    background-color: #1976d2;
+    border-width: 0;
+    height: 10vh;
+    display: inline-flex;
+    width: 100vw;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+body {
+    background-color: #161925;
+}
+a {
+    text-decoration: none;
+}
+
+.appName {
+    height: 10vh;
+    line-height: 10vh;
+    margin-left: 10vw;
+    font-family: Roboto-Bold;
+    text-transform: uppercase;
+    color: white;
+    width: fit-content;
+}
+.subAppName {
+    height: 10vh;
+    line-height: 10vh;
+    margin-left: 2vw;
+    font-family: Roboto-Bold;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: white;
+    width: fit-content;
+}
+
+.theForm {
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    width: 70vw;
+    height: 80vh;
+    display: inline-flex;
+    overflow: hidden;
+
+    border-radius: 15px;
+}
+.theForm-L {
+    width: 45vw;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+
+    backdrop-filter: blur(10px);
+}
+.theForm-R {
+    width: 45vw;
+    height: 100%;
+    background-color: rgb(83, 83, 83);
+
+    background-image: url(https://i.ytimg.com/vi/F0lX-NZCFgY/maxresdefault.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#microsoftLogo {
+    width: 2vw;
+    margin-left: 7vw;
+    display: block;
+}
+
+#loginText {
+    font-family: Roboto-Bold;
+    text-align: center;
+    color: black;
+    margin-left: 1vw;
+
+    height: 1vh;
+    line-height: 1vh;
+
+    font-size: larger;
+}
+
+.loginWithMicrosoft {
+    background-color: white;
+    width: 25vw;
+    height: 5vh;
+    display: inline-flex;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    border-radius: 7px;
+
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    transition: box-shadow ease-in-out 0.2s;
+}
+.loginWithMicrosoft:hover {
+    box-shadow: #161925 0px 0px 0px 2px;
+}
+
+.loginWithMicrosoft-Wrapper {
+    position: relative;
+    top: 1%;
+    margin: auto;
+    left: 4vw;
+}
+
+#prijavaText {
+    margin-left: 4vw;
+    margin-top: 9vh;
+    font-family: Roboto-Black;
+
+    font-size: 3rem;
+}
+#prijavaSubText {
+    margin-left: 4vw;
+    font-family: Roboto-Light;
+    font-size: 2rem;
+}
+#prijavaDesc {
+    margin-left: 4vw;
+    font-family: Roboto-Light;
+    font-size: 1rem;
+}
+
+.inputEMSO {
+    width: 23.75vw;
+    margin-left: 4vw;
+    margin-top: 10vh;
+    padding-left: 1vw;
+    display: block;
+
+    height: 5vh;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+
+    border: 0;
+    border-radius: 7px;
+    font-size: large;
+}
+.inputEMSO:focus {
+    width: 23.75vw;
+    margin-left: 4vw;
+    display: block;
+
+    height: 5vh;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+
+    border: 0;
+    border-radius: 7px;
+
+    outline: none;
+    font-size: large;
+}
+.inputPrijava {
+    margin-left: 4vw;
+    margin-top: 2.5vh;
+    width: 25vw;
+    border: 0;
+
+    font-family: Roboto-Bold;
+    font-size: large;
+
+    background-color: #161925;
+    color: white;
+    
+    width: 25vw;
+    height: 5vh;
+    padding-top: 2.5vh;
+    padding-bottom: 5vh;
+    border-radius: 7px;
+
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    transition: box-shadow ease-in-out 0.2s, color ease-in-out 0.2s, background-color ease-in-out 0.2s;
+}
+.inputPrijava:hover {
+    box-shadow: #161925 0px 0px 0px 2px;
+    background-color: white;
+    color: #161925;
+
+    cursor: pointer;
+}
+
+hr {
+    width: 25vw;
+    margin-left: 4vw;
+    margin-right: 5vw;
+    margin-top: 9%;
+    color: #161925;
+}
