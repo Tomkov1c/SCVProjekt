@@ -1,8 +1,8 @@
 *Read this in other languages. By defualt this README is  in slovene.*
 <br>
 
-<kbd>[<img title="English" alt="English" src="https://github.com/Tomkov1c/SCVProjekt/blob/main/GitHub/Images/England.png" width="22">](https://github.com/Tomkov1c/SCVProjekt/blob/main/GitHub/README.en.md)</kbd>
-<kbd>[<img title="Slovenian" alt="Slovenian" src="https://github.com/Tomkov1c/SCVProjekt/blob/main/GitHub/Images/Slovenia.png" width="22">](https://github.com/Tomkov1c/SCVProjekt/blob/main/README.md)</kbd>
+<kbd>[🇺🇸](https://github.com/Tomkov1c/SCVProjekt/blob/main/GitHub/README.en.md)</kbd>
+<kbd>[🇸🇮](https://github.com/Tomkov1c/SCVProjekt/blob/main/README.md)</kbd>
 
 # 🏫 Šolski Center Velenje - Projektna naloga
 *Spletna aplikacija, ki je namenjena dijakom Šolskega Centra Velenje, ki omogoča pregled nad dosežki, lestvicami za razne doseške, pregled med tekmovanji, ...*
@@ -25,7 +25,7 @@
 
 <br>
 
-## ⌨️ Developerja
+## ⌨️ Developerji
 <table>
   <tbody>
     <tr>
