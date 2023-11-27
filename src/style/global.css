@@ -53,14 +53,6 @@
 
     --McolorAccent: #5B6776;
     --McolorSecondary: #C8CED5;
-
-
-    --filterColorAccent: invert(38%) sepia(10%) saturate(2696%) hue-rotate(180deg) brightness(92%) contrast(86%);
-    --filterColorPrimary: invert(20%) sepia(72%) saturate(3760%) hue-rotate(324deg) brightness(91%) contrast(102%);
-    --filterColorSecundary: invert(91%) sepia(17%) saturate(117%) hue-rotate(176deg) brightness(102%) contrast(90%);
-    --filterColorText: invert(4%) sepia(7%) saturate(2116%) hue-rotate(289deg) brightness(94%) contrast(98%);
-    --filterColorBackground: invert(91%) sepia(3%) saturate(704%) hue-rotate(188deg) brightness(107%) contrast(94%);
-    --filterColorHighlight: invert(94%) sepia(7%) saturate(867%) hue-rotate(342deg) brightness(94%) contrast(92%);
 }
 [data-theme="dark"] {
     
@@ -74,14 +66,6 @@
 
     --McolorAccent: #5B6776;
     --McolorSecondary: #C8CED5;
-
-
-    --filterColorAccent: invert(38%) sepia(10%) saturate(2696%) hue-rotate(180deg) brightness(92%) contrast(86%);
-    --filterColorPrimary: invert(20%) sepia(72%) saturate(3760%) hue-rotate(324deg) brightness(91%) contrast(102%);
-    --filterColorSecundary: invert(91%) sepia(17%) saturate(117%) hue-rotate(176deg) brightness(102%) contrast(90%);
-    --filterColorText: invert(4%) sepia(7%) saturate(2116%) hue-rotate(289deg) brightness(94%) contrast(98%);
-    --filterColorBackground: invert(91%) sepia(3%) saturate(704%) hue-rotate(188deg) brightness(107%) contrast(94%);
-    --filterColorHighlight: invert(94%) sepia(7%) saturate(867%) hue-rotate(342deg) brightness(94%) contrast(92%);
 }
 
 ::selection {

@@ -1,0 +1,95 @@
+* {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+html {
+    background-color: var(--colorBackground);
+
+}
+body {
+    display: inline-flex;
+    width: 100vw;
+}
+
+#sectionL {
+    background-color: var(--colorSecundary);
+
+    margin-left: 5vw;
+    width: 14vw;
+
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+
+    height: 86vh;
+
+    border-radius: 12px;
+
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+
+}
+.sectionLButton {
+    display: flex;
+    border-radius: 8px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 5vh;
+
+    width: 80%;
+    height: 7vh;
+
+    cursor: pointer;
+}
+.sectionLButton:hover .sectionLButtonIcon{
+    color: var(--colorAccent);
+}
+.sectionLButton:hover .sectionLButtonText{
+    color: var(--colorAccent);
+}
+.sectionLButtonIcon {
+    margin-top: auto;
+    margin-bottom: auto;
+
+    margin-right: 0.7vw;
+    margin-left: 2vw;
+
+    font-size: 1.1vw;
+
+    transition: color 0.2s ease-in-out;
+}
+.sectionLButtonText {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 0px;
+    margin-right: auto;
+
+    font-family: Poppins;
+    font-size: 0.8vw;
+
+    transition: color 0.2s ease-in-out;
+
+}
+
+/*                          */
+/*                          */
+/*                          */
+/*                          */
+/*                          */
+/*                          */
+/*                          */
+/*      Right Section       */
+#sectionR {
+    width: 75vw;
+    height: 96vh;
+
+    background-color: var(--colorSecundary);
+
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-right: 5vw;
+    margin-left: auto;
+
+    border-radius: 12px;
+}
