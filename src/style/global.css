@@ -51,8 +51,17 @@
     --colorAccent: #436298;
     --colorHighlight: #E7D9C1;
 
-    --McolorAccent: #5B6776;
-    --McolorSecondary: #C8CED5;
+    --colorShadow: rgba(0,0,0,0.75);
+
+    --McolorAccent: rgb(193, 208, 225);
+
+
+    /*      Achivements Colors      */
+    --colorAchivementsBronze: rgb(213, 131, 48);
+    --colorAchivementsSilver: rgb(209, 209, 209);
+    --colorAchivementsGold: #FFD700;
+    --colorAchivementsDiamond: #6fc5ec;
+    --colorAchivementsPearl: #eae0c8;
 }
 [data-theme="dark"] {
     
@@ -64,8 +73,9 @@
     --colorTerciary: #24262b;
     --colorAccent: #6786bc;
 
+    --colorShadow: rgba(219,219,219,1);
+
     --McolorAccent: #5B6776;
-    --McolorSecondary: #C8CED5;
 }
 
 ::selection {

@@ -2,11 +2,15 @@ const article = document.querySelector("#darmModeID");
 document.addEventListener('keypress', (event) => {
   var code = event.code;
   if(code == "KeyD") {
-    if(article.dataset.theme == "light")
+    if(article.getAttribute("data-theme") == "light")
     {
-      article.dataset.theme = "dark";
+      document.querySelector("#darmModeID").dataset.theme = "dark";
+      var temp = document.getElementsByTagName("iframe").document;
+      var html = temp.getAttribute("theme") = "light"
+
+
     }else {
-      article.dataset.theme = "light";
+      document.querySelector("#darmModeID").dataset.theme = "light";
     }
   }
 }, false);

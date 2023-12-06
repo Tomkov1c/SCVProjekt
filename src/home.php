@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light" id="darmModeID">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +10,10 @@
 </head>
 <body>
     <section id="sectionL">
+        <div id="sectionLProfileButton">
+            <img class="sectionLButtonIcon" id="sectionLProfileButtonIcon" alt="" src="images/testProfilePicture.jpeg"></img>
+            <p class="sectionLButtonText" id="sectionLProfileButtonText">Ime</p> <!--       Samo ime nič drugiga        -->
+        </div>
         <div class="sectionLButton">
             <i class="fa-solid fa-house sectionLButtonIcon"></i>
             <p class="sectionLButtonText">Domov</p>
@@ -26,10 +30,19 @@
             <i class="fa-solid fa-graduation-cap sectionLButtonIcon"></i>
             <p class="sectionLButtonText">Uspeh</p>
         </div>
+
+
+        <!---->
+        <div class="sectionLButton" id="sectionLSettingsButton">
+            <i class="fa-solid fa-gear sectionLButtonIcon"></i>
+            <p class="sectionLButtonText">Nastavitve</p>
+        </div>
     </section>
     <section id="sectionR">
-        
+        <iframe src="home.html" id="sectionLIframe" frameborder="0" data-theme="light" id="darmModeIframe"></iframe>
     </section>
 </body>
 </html>
 <script src="script/dash.js"></script>
+<script src="script/menuButtons.js"></script>
+<script src="script/darkMode.js"></script>
