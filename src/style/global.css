@@ -41,41 +41,22 @@
 
 [data-theme="light"] {
     
-    --colorBlack: #161925;
-    --colorWhite: #F5F5F5;
-    --colorText: #120c0e;
-    --colorBackground: #eef2f7;
-    --colorPrimary: #eb1565;
-    --colorSecundary: #e3eaf2;
-    --colorTerciary: #e2e6ea;
-    --colorAccent: #436298;
-    --colorHighlight: #E7D9C1;
-
-    --colorShadow: rgba(0,0,0,0.75);
-
-    --McolorAccent: rgb(193, 208, 225);
-
-
-    /*      Achivements Colors      */
-    --colorAchivementsBronze: rgb(213, 131, 48);
-    --colorAchivementsSilver: rgb(209, 209, 209);
-    --colorAchivementsGold: #FFD700;
-    --colorAchivementsDiamond: #6fc5ec;
-    --colorAchivementsPearl: #eae0c8;
+    --colorText: #070c0e;
+    --colorBackground: #f1f7f9;
+    --colorPrimary: #0094d9;
+    --colorSecundary: #88c7e4;
+    --colorTerciary: #e5ebed;
+    --colorAccent: #4fb5e4;
 }
 [data-theme="dark"] {
     
 
-    --colorText: #fcfcfd;
-    --colorBackground: #14161A;
-    --colorPrimary: #CF1F60;
-    --colorSecundary: #0d141c;
-    --colorTerciary: #24262b;
-    --colorAccent: #6786bc;
-
-    --colorShadow: rgba(219,219,219,1);
-
-    --McolorAccent: #5B6776;
+    --colorText: #f1f6f8;
+    --colorBackground: #060c0e;
+    --colorPrimary: #24baff;
+    --colorSecundary: #1b5b79;
+    --colorTerciary: #121719;
+    --colorAccent: #1c81b0;
 }
 
 ::selection {
