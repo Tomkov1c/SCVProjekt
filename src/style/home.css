@@ -8,9 +8,6 @@ html {
     overflow: hidden;
 
 }
-h1, h2, h3, h4, h5, h6, a, li, p {
-    font-family: Mulish;
-}
 body {
     display: inline-flex;
     width: 100vw;
@@ -18,14 +15,79 @@ body {
 }
 
 #sectionL {
-    background-color: var(--colorText);
+    background-color: var(--colorTerciary);
     display: block;
     position: relative;
 
-    width: 30vw;
-    height: 100vh;
+    width: 15vw;
+    height: 90vh;
+
+    margin: 5vh 2vw;
+
+    border-radius: 8px;
 
 }
 #sectionR {
-    
+    background-color: var(--colorTerciary);
+    display: block;
+    position: relative;
+
+    width: 79vw;
+    height: 90vh;
+
+    margin: 5vh 0;
+
+    border-radius: 8px;
+}
+
+#sectionL > button {
+    display: flex;
+
+    width: 80%;
+    height: 5%;
+
+    margin: 5% 10%;
+    padding: 5% 1.5%;
+
+    background-color: transparent;
+    border: 0 solid transparent;
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    transition: background-color ease-in-out 0.1s;
+}
+#sectionL > button > i {
+    display: block;
+
+    font-size: 1.3rem;
+    width: 10%;
+
+    color: var(--colorAccent);
+    margin: auto 10%;
+
+    transition: color ease-in-out 0.1s;
+}
+#sectionL > button > p {
+    display: block;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    width: max-content;
+    margin: auto 0;
+
+    transition: color ease-in-out 0.1s;
+
+}
+#sectionL > button:hover {
+    background-color: var(--colorSecundary);
+
+}
+#sectionL > button:hover > i {
+    color: var(--colorBackground);
+}
+#sectionL > button:hover > p {
+    color: var(--colorBackground);
+
 }

@@ -39,6 +39,10 @@
     src: url(fonts/roboto/Poppins-Light.ttf);
 }
 
+h1, h2, h3, h4, h5, h6, a, li, p {
+    font-family: Mulish;
+}
+
 [data-theme="light"] {
     
     --colorText: #070c0e;
