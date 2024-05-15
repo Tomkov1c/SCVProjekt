@@ -5,7 +5,9 @@
 <kbd>[🇸🇮](https://github.com/Tomkov1c/SCVProjekt/blob/main/README.md)</kbd>
 
 # 🏫 Šolski Center Velenje - Projektna naloga
-*Spletna aplikacija, ki je namenjena dijakom Šolskega Centra Velenje, ki omogoča pregled nad dosežki, lestvicami za razne doseške, pregled med tekmovanji, ...*
+*Spletna aplikacija, ki je namenjena profesorjem Šolskega Centra Velenje, ki omogoča pregled nad dosežki, lestvicami za razne doseške, pregled med tekmovanji, ...*
+
+<p align="center"><img src=".github/images/Dashboard.png" width=50%></p>
 
 ## ✔️ Načrt razvijanja
 - **Izgled**
