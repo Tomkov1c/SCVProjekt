@@ -39,8 +39,16 @@
     src: url(fonts/roboto/Poppins-Light.ttf);
 }
 
-h1, h2, h3, h4, h5, h6, a, li, p {
+h1, h2, h3, h4, h5, h6, a, li, p, ol, ul {
     font-family: Mulish;
+
+    color: var(--colorText);
+}
+li {
+    margin-left: 2vw;
+}
+ol, ul {
+    margin-top: 0.5vh;
 }
 
 [data-theme="light"] {
