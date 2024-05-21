@@ -59,6 +59,8 @@ ol, ul {
     --colorSecundary: #88c7e4;
     --colorTerciary: #e5ebed;
     --colorAccent: #4fb5e4;
+
+    --colorFull: #ffffff;
 }
 [data-theme="dark"] {
     
@@ -69,6 +71,8 @@ ol, ul {
     --colorSecundary: #1b5b79;
     --colorTerciary: #121719;
     --colorAccent: #1c81b0;
+
+    --colorFull: #000000;
 }
 
 ::selection {
@@ -93,4 +97,70 @@ html {
 .display_inline_flex {
     display: inline-flex;
     width: 100%;
+}
+
+
+
+
+/*      Dev Menu        */
+#devMenu {
+    display: none;
+    position: fixed;
+
+    height: 70vh;
+    width: 70vw;
+
+    padding: 5vh 5vw;
+    margin: 10vh 10vw;
+
+    background-color: var(--colorFull);
+
+    border-radius: 7px;
+
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 2px solid var(--colorPrimary);
+}
+.display_inline_flex > a {
+    color: var(--colorText);
+
+    display: flex;
+
+    width: 100%;
+    height: fit-content;
+
+    margin: 2vh 0;
+    padding: 2vh;
+    margin-right: 1vw;
+
+    border-radius: 7px;
+    background-color: var(--colorBackground);
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+    transition: background-color ease-in-out 0.1s;
+}
+.display_inline_flex > a:hover {
+    background-color: var(--colorAccent);
+}
+.display_inline_flex > a > p {
+    color: var(--colorText);
+
+    display: block;
+    margin: auto 0vw;
+
+    font-weight: 600;
+}
+.display_inline_flex > a > i {
+    display: block;
+    margin: auto 1vw;   
+
+    font-size: 2.5rem;
+}
+.fa-html5 {
+    color: #e5532d;
+}
+.fa-css3-alt {
+    color: #0870c2;
 }
