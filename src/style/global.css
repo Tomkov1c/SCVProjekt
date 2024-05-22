@@ -38,6 +38,10 @@
     font-family: Poppins-Light;
     src: url(fonts/Poppins-Light.ttf);
 }
+@font-face {
+    font-family: Mulish;
+    src: url(fonts/Mulish-Medium.ttf);
+}
 
 h1, h2, h3, h4, h5, h6, a, li, p, ol, ul {
     font-family: Mulish;
