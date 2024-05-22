@@ -42,6 +42,9 @@
     font-family: Mulish;
     src: url(fonts/Mulish-Medium.ttf);
 }
+* {
+    scroll-behavior: smooth;
+}
 
 h1, h2, h3, h4, h5, h6, a, li, p, ol, ul {
     font-family: Mulish;
