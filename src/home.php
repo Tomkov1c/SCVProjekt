@@ -1,3 +1,9 @@
+<?php
+require_once "povezava.php";
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en" data-theme="light" id="darmModeID">
 <head>
@@ -60,8 +66,12 @@
             <a href="samples/vnos.html"><i class="fa-solid fa-hashtag"></i><p>Vnos</p></a>
             <a href="samples/pogled.html"><i class="fa-solid fa-eye"></i><p>Pogled</p></a>
             <a href="samples/"><i class="fa-solid fa-chair"></i><p>Razred</p></a>
+            <a href="Logout.php">logout</a>
+            <a href="povezavatest.php">Baza Test</a>
+            
         </div>
     </div>
+    
 <script src="script/darkMode.js"></script>
 <script src="script/devMenu.js"></script>
 </html>
