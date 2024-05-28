@@ -1,81 +1,82 @@
 @font-face {
     font-family: Roboto-Black;
-    src: url(fonts/roboto/Roboto-Black.ttf);
+    src: url(fonts/Roboto-Black.ttf);
 }
 @font-face {
     font-family: Roboto-Bold;
-    src: url(fonts/roboto/Roboto-Bold.ttf);
+    src: url(fonts/Roboto-Bold.ttf);
 }
 @font-face {
     font-family: Roboto-Regular;
-    src: url(fonts/roboto/Roboto-Regular.ttf);
+    src: url(fonts/Roboto-Regular.ttf);
 }
 @font-face {
     font-family: Roboto-Light;
-    src: url(fonts/roboto/Roboto-Light.ttf);
+    src: url(fonts/Roboto-Light.ttf);
 }
 @font-face {
     font-family: Montserrat;
-    src: url(fonts/roboto/Montserrat-Regular.ttf);
+    src: url(fonts/Montserrat-Regular.ttf);
 }
 @font-face {
     font-family: Montserrat-Bold;
-    src: url(fonts/roboto/Montserrat-Bold.ttf);
+    src: url(fonts/Montserrat-Bold.ttf);
 }
 @font-face {
     font-family: Poppins;
-    src: url(fonts/roboto/Poppins-Medium.ttf);
+    src: url(fonts/Poppins-Medium.ttf);
 }
 @font-face {
     font-family: Poppins-Bold;
-    src: url(fonts/roboto/Poppins-Bold.ttf);
+    src: url(fonts/Poppins-Bold.ttf);
 }
 @font-face {
     font-family: Poppins-Black;
-    src: url(fonts/roboto/Poppins-Black.ttf);
+    src: url(fonts/Poppins-Black.ttf);
 }
 @font-face {
     font-family: Poppins-Light;
-    src: url(fonts/roboto/Poppins-Light.ttf);
+    src: url(fonts/Poppins-Light.ttf);
+}
+@font-face {
+    font-family: Mulish;
+    src: url(fonts/Mulish-Medium.ttf);
+}
+
+h1, h2, h3, h4, h5, h6, a, li, p, ol, ul {
+    font-family: Mulish;
+
+    color: var(--colorText);
+}
+li {
+    margin-left: 2vw;
+}
+ol, ul {
+    margin-top: 0.5vh;
 }
 
 [data-theme="light"] {
     
-    --colorBlack: #161925;
-    --colorWhite: #F5F5F5;
-    --colorText: #120c0e;
-    --colorBackground: #eef2f7;
-    --colorPrimary: #eb1565;
-    --colorSecundary: #e3eaf2;
-    --colorTerciary: #e2e6ea;
-    --colorAccent: #436298;
-    --colorHighlight: #E7D9C1;
+    --colorText: #070c0e;
+    --colorBackground: #f1f7f9;
+    --colorPrimary: #0094d9;
+    --colorSecundary: #88c7e4;
+    --colorTerciary: #e5ebed;
+    --colorAccent: #4fb5e4;
 
-    --colorShadow: rgba(0,0,0,0.75);
-
-    --McolorAccent: rgb(193, 208, 225);
-
-
-    /*      Achivements Colors      */
-    --colorAchivementsBronze: rgb(213, 131, 48);
-    --colorAchivementsSilver: rgb(209, 209, 209);
-    --colorAchivementsGold: #FFD700;
-    --colorAchivementsDiamond: #6fc5ec;
-    --colorAchivementsPearl: #eae0c8;
+    --colorFull: #ffffff;
 }
 [data-theme="dark"] {
     
 
-    --colorText: #fcfcfd;
-    --colorBackground: #14161A;
-    --colorPrimary: #CF1F60;
-    --colorSecundary: #0d141c;
-    --colorTerciary: #24262b;
-    --colorAccent: #6786bc;
+    --colorText: #f1f6f8;
+    --colorBackground: #060c0e;
+    --colorPrimary: #24baff;
+    --colorSecundary: #1b5b79;
+    --colorTerciary: #121719;
+    --colorAccent: #1c81b0;
 
-    --colorShadow: rgba(219,219,219,1);
-
-    --McolorAccent: #5B6776;
+    --colorFull: #000000;
 }
 
 ::selection {
@@ -100,4 +101,70 @@ html {
 .display_inline_flex {
     display: inline-flex;
     width: 100%;
+}
+
+
+
+
+/*      Dev Menu        */
+#devMenu {
+    display: none;
+    position: fixed;
+
+    height: 70vh;
+    width: 70vw;
+
+    padding: 5vh 5vw;
+    margin: 10vh 10vw;
+
+    background-color: var(--colorFull);
+
+    border-radius: 7px;
+
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 2px solid var(--colorPrimary);
+}
+.display_inline_flex > a {
+    color: var(--colorText);
+
+    display: flex;
+
+    width: 100%;
+    height: fit-content;
+
+    margin: 2vh 0;
+    padding: 2vh;
+    margin-right: 1vw;
+
+    border-radius: 7px;
+    background-color: var(--colorBackground);
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+    transition: background-color ease-in-out 0.1s;
+}
+.display_inline_flex > a:hover {
+    background-color: var(--colorAccent);
+}
+.display_inline_flex > a > p {
+    color: var(--colorText);
+
+    display: block;
+    margin: auto 0vw;
+
+    font-weight: 600;
+}
+.display_inline_flex > a > i {
+    display: block;
+    margin: auto 1vw;   
+
+    font-size: 2.5rem;
+}
+.fa-html5 {
+    color: #e5532d;
+}
+.fa-css3-alt {
+    color: #0870c2;
 }
