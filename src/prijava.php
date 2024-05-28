@@ -118,4 +118,3 @@ if ($_GET['action'] == 'logout'){
     header ('Location: http://localhost/prijava.php');
     die();
 }
-
