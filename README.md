@@ -21,7 +21,6 @@
 - **Backend**
 	- 🟩 Povezava s Microsoft Računom
 	- ⬛ Podatkovna baza
-	- ⬛ eAsistent API
 
 <br>
 
