@@ -10,7 +10,7 @@ html {
 }
 body {
     display: inline-flex;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 
@@ -44,13 +44,16 @@ body {
 
 #sectionL {
     background-color: var(--colorTerciary);
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: relative;
 
     width: 15vw;
-    height: 85vh;
+    height: 92vh;
 
-    margin: 5vh 2vw;
+    margin: 1rem;
+    margin-right: 0;
     padding: 2.5vh 0;
 
     border-radius: 8px;
@@ -59,11 +62,12 @@ body {
 
 #sectionL > button {
     display: flex;
+    position: relative;
 
     width: 80%;
     height: 6%;
 
-    margin: 5% 10%;
+    margin: 2.5% 10%;
     padding: 5% 1.5%;
 
     background-color: transparent;
@@ -75,6 +79,10 @@ body {
     transition: background-color ease-in-out 0.1s;
 
     opacity: 50%;
+}
+#sectionL > .bottom {
+    margin: auto 10% 0% 10% !important;
+
 }
 #sectionL > #active {
     background-color: var(--colorSecundary);
@@ -92,7 +100,7 @@ body {
     display: block;
 
     font-size: 1.3rem;
-    width: 10%;
+    width: 1rem;
 
     color: var(--colorAccent);
     margin: auto 10%;
@@ -125,10 +133,10 @@ body {
     position: relative;
     overflow-x: hidden;
 
-    width: 73vw;
-    height: 82vh;
+    width: 90vw;
+    height: 89vh;
 
-    margin: 5vh 0;
+    margin: 1rem;
     padding: 4vh 2.5vw;
 
     border-radius: 8px;
@@ -196,4 +204,39 @@ body {
 
     margin: auto 1vw;
 
+}
+
+#sectionR > .calloutOption{
+    display: flex;
+
+    width: calc(100% - 4vh);
+    height: 4vh;
+
+    padding: 2vh;
+    margin: 1vh 0;
+
+    border-radius: 7px;
+    background-color: var(--colorSecundary);
+
+    color: var(--colorText);
+}
+#sectionR > .calloutOption > i{
+    display: block;
+
+    margin: auto 1vw;
+    margin-right: 2vw;
+    font-size: 1.5rem;
+}
+#sectionR > .calloutOption > div{
+    margin: auto 0;
+}
+#sectionR > .calloutOption > div > p:first-child{
+    font-family: Mulish-Light;
+
+    font-size: 1rem;
+}
+#sectionR > .calloutOption > div > p:last-child{
+    font-family: Mulish-ExtraLight;
+    opacity: 0.6;
+    font-size: 0.7rem;
 }

@@ -1,6 +1,3 @@
-<?php
-require_once 'povezava.php';
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
