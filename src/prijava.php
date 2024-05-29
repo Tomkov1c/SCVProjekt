@@ -47,8 +47,12 @@ require_once 'povezava.php';
                 
                 header('Location: home.php');
             } 
-            else {
-                echo "EMŠO not found in database.";
+            else if ($_SESSION['emso'] == "admin") 
+            {
+                header('Location: admin.php');
+            } else
+            {
+                echo "<p id='errorText'>Napačen EMŠO</p>";
             }
 
             }
