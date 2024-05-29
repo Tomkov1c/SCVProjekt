@@ -42,6 +42,14 @@
     font-family: Mulish;
     src: url(fonts/Mulish-Medium.ttf);
 }
+@font-face {
+    font-family: Mulish-Light;
+    src: url(fonts/Mulish-Light.ttf);
+}
+@font-face {
+    font-family: Mulish-ExtraLight;
+    src: url(fonts/Mulish-ExtraLight.ttf);
+}
 * {
     scroll-behavior: smooth;
 }
