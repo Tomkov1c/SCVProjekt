@@ -1,6 +1,3 @@
-<?php
-require_once 'povezava.php';
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,32 +30,6 @@ require_once 'povezava.php';
             <label for="emso">
             <input type="password" name="emso" maxlength="13" class="inputEMSO" placeholder="EMŠO" autofocus>
             <input type="submit" value="Prijava" class="inputPrijava">
-            <?php
-            //get emso in session
-            if(isset($_GET['emso']))
-            {
-            $_SESSION['emso'] = $_GET['emso'];
-            //check if emso exists in database
-            $query = "SELECT ime FROM dijaki WHERE emso = '".$_SESSION['emso']."'";
-            $result = mysqli_query($conn, $query);
-            if (mysqli_num_rows($result) > 0) {
-                $row = mysqli_fetch_assoc($result);
-                $_SESSION['ime'] = $row['ime'];
-                
-                header('Location: home.php');
-            } 
-            else {
-                echo "EMŠO not found in database.";
-            }
-
-            }
-            
-
-            
-      
-        
-
-            ?>
         </form>
         <hr>
         <?php
