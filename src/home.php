@@ -4,6 +4,7 @@ require_once "povezava.php";
 ?>
 
 
+
 <!DOCTYPE html>
 <html lang="en" data-theme="light" id="darmModeID">
 <head>
@@ -22,24 +23,37 @@ require_once "povezava.php";
         <button><i class="fa-solid fa-chair"></i><p>3. TRB</p></button>
     </section>
     <section id="sectionR">
-        <h1>UI Elements</h1>
+        
+        
+        <?php
+        session_start();
+        if(isset($_SESSION['ime']))
+        {
+            echo "<h1>Pozdravljen, " . $_SESSION['ime'] . "</h1>";
+        }
+        else
+        {
+            header("Location: index.html");
+        }
+
+        $query = "SELECT r.razred FROM dijaki d JOIN razredi_dijaki rd ON d.id_di = rd.id_di JOIN razredi r ON rd.id_r = r.id_r WHERE d.ime = '".$_SESSION['ime']."'";
+        $result = mysqli_query($conn, $query);
+
+        if (mysqli_num_rows($result) > 0) {
+            $row = mysqli_fetch_assoc($result);
+            echo "<h2>Razred: " . $row['razred'] . "</h2>";
+        } 
+        else {
+            echo "<h2>Razred: Ni podatka</h2>";
+        }
+
+
+
+        ?>
+        
         <br><br>
-        <h1>Heading 1</h1>
-        <h2>Heading 2</h2>
-        <h3>Heading 3</h3>
-        <p>Adipisci ducimus accusamus saepe esse quas quae in libero cupiditate, est unde doloremque soluta, deserunt maiores eveniet dolorem labore explicabo laborum sint, quibusdam recusandae iure nemo rem sunt voluptatibus dolorem aspernatur quod?</p>
-        <ol>
-            <li>ipsum</li>
-            <li>quos</li>
-            <li>alias</li>
-            <li>laboriosam</li>
-        </ol>
-        <ul>
-            <li>ipsum</li>
-            <li>quos</li>
-            <li>alias</li>
-            <li>laboriosam</li>
-        </ul>
+        
+        
 
 
 
