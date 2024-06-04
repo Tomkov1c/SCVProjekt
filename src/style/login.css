@@ -1,134 +1,62 @@
-header {
-    background-color: #1976d2;
-    border-width: 0;
-    height: 10vh;
-    display: inline-flex;
-    width: 100vw;
-}
-h1,h2,h3,h4,h5,h6 {
+* {
+    overflow: hidden;
     margin: 0 0 0 0;
     padding: 0 0 0 0;
 }
+h1,h2,h3,h4,h5,h6 {
+    font-family: Mulish;
+    color: var(--colorText);
+}
 body {
-    background-color: #161925;
+    background-color: var(--colorBackground);
+
+    overflow: hidden;
 }
 a {
     text-decoration: none;
 }
 
-.appName {
-    height: 10vh;
-    line-height: 10vh;
-    margin-left: 10vw;
-    font-family: Roboto-Bold;
-    text-transform: uppercase;
-    color: white;
-    width: fit-content;
-}
-.subAppName {
-    height: 10vh;
-    line-height: 10vh;
-    margin-left: 2vw;
-    font-family: Roboto-Bold;
-    font-size: 1em;
-    text-transform: uppercase;
-    color: white;
-    width: fit-content;
-}
+body > section {
+    margin: 10vh 15vw;
+    display: flex;
+    position: fixed;
 
-.theForm {
-    margin-left: 15vw;
-    margin-right: 15vw;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
     width: 70vw;
     height: 80vh;
-    display: inline-flex;
+
+    background-color: var(--colorTerciary);
+
+    border-radius: 17px;
+
     overflow: hidden;
-
-    border-radius: 15px;
 }
-.theForm-L {
-    width: 45vw;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.95);
+#sideL {
 
-    backdrop-filter: blur(10px);
+    --padding: 4vw;
+    --width: 50%;
+
+    width: calc(var(--width) - var(--padding));
+    padding: var(--padding);
 }
-.theForm-R {
-    width: 45vw;
-    height: 100%;
-    background-color: rgb(83, 83, 83);
-
-    background-image: url(https://i.ytimg.com/vi/F0lX-NZCFgY/maxresdefault.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-#microsoftLogo {
-    width: 2vw;
-    margin-left: 7vw;
-    display: block;
-}
-
-#loginText {
-    font-family: Roboto-Bold;
-    text-align: center;
-    color: black;
-    margin-left: 1vw;
-
-    height: 1vh;
-    line-height: 1vh;
-
-    font-size: larger;
-}
-
-.loginWithMicrosoft {
-    background-color: white;
-    width: 25vw;
-    height: 5vh;
-    display: inline-flex;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-    border-radius: 7px;
-
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-
-    transition: box-shadow ease-in-out 0.2s;
-}
-.loginWithMicrosoft:hover {
-    box-shadow: #161925 0px 0px 0px 2px;
-}
-
-.loginWithMicrosoft-Wrapper {
-    position: relative;
-    top: 1%;
-    margin: auto;
-    left: 4vw;
-}
-
-#prijavaText {
-    margin-left: 4vw;
-    margin-top: 9vh;
-    font-family: Roboto-Black;
-
+#sideL > h1 {
     font-size: 3rem;
 }
-#prijavaSubText {
-    margin-left: 4vw;
-    font-family: Roboto-Light;
-    font-size: 2rem;
-}
-#prijavaDesc {
-    margin-left: 4vw;
-    font-family: Roboto-Light;
+#sideL > h2 {
     font-size: 1rem;
-}
+    font-family: Mulish-ExtraLight;
+    font-weight: 100;
 
-.inputEMSO {
-    width: 23.75vw;
-    margin-left: 4vw;
-    margin-top: 10vh;
+    margin-bottom: 15vh;
+}
+#sideL > form {
+    width: 100%;
+}
+#sideL > form > .inputField {
+    width: calc(100% - 1vw);
+    display: block;
+
+    margin: 0 auto;
+
     padding-left: 1vw;
     display: block;
 
@@ -139,35 +67,28 @@ a {
     border: 0;
     border-radius: 7px;
     font-size: large;
+
+    background-color: var(--colorBackground);
+    color: var(--colorText);
 }
-.inputEMSO:focus {
-    width: 23.75vw;
-    margin-left: 4vw;
-    display: block;
-
-    height: 5vh;
-    padding-top: 1.5vh;
-    padding-bottom: 1.5vh;
-
-    border: 0;
-    border-radius: 7px;
-
+#sideL > form > .inputField:focus {
     outline: none;
     font-size: large;
 }
-.inputPrijava {
-    margin-left: 4vw;
+
+#sideL > form > .inputPrijava {
+    width: 100%;
+    display: block;
+
+    margin: 0 auto;
     margin-top: 2.5vh;
-    width: 25vw;
     border: 0;
 
-    font-family: Roboto-Bold;
     font-size: large;
 
-    background-color: #161925;
-    color: white;
+    background-color: var(--colorAccent);
+    color: var(--colorText);
     
-    width: 25vw;
     height: 5vh;
     padding-top: 2.5vh;
     padding-bottom: 5vh;
@@ -176,19 +97,77 @@ a {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
     transition: box-shadow ease-in-out 0.2s, color ease-in-out 0.2s, background-color ease-in-out 0.2s;
+
 }
-.inputPrijava:hover {
-    box-shadow: #161925 0px 0px 0px 2px;
-    background-color: white;
-    color: #161925;
+#sideL > form > .inputPrijava:hover {
+    background-color: var(--colorPrimary);
+    color: var(--colorBackground);
 
     cursor: pointer;
 }
-
 hr {
-    width: 25vw;
-    margin-left: 4vw;
-    margin-right: 5vw;
-    margin-top: 9%;
-    color: #161925;
+    display: block;
+
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+
+    border: 0.1px solid var(--colorText);
+    opacity: 0.1;
+
+    border-radius: 100vw;
+}
+#microsoftPrijava {
+    width: 100%;
+    display: flex;
+
+    margin: 0 auto;
+    margin-top: 2.5vh;
+    border: 0;
+
+    background-color: var(--colorAccent);
+    color: var(--colorText);
+    
+    height: 5vh;
+    border-radius: 7px;
+    padding: 1.5vh 0;
+
+    transition: box-shadow ease-in-out 0.2s, color ease-in-out 0.2s, background-color ease-in-out 0.2s;
+
+}
+#microsoftPrijava:hover {
+    background-color: var(--colorPrimary);
+    color: var(--colorBackground);
+
+    cursor: pointer;
+}
+#microsoftPrijava > img {
+    width: 2vw;
+    display: block;
+
+    margin: auto 0;
+    margin-right: 1vw;
+    margin-left: auto;
+}
+#microsoftPrijava > p {
+    display: block;
+    margin: auto 0;
+    margin-right: auto;
+
+    color: inherit;
+
+}
+
+
+
+
+
+
+
+
+
+/*                  */
+#sideR {
+    width: 50%;
+
+    background-color: var(--colorPrimary);
 }

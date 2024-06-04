@@ -42,6 +42,21 @@
     font-family: Mulish;
     src: url(fonts/Mulish-Medium.ttf);
 }
+@font-face {
+    font-family: Mulish-Light;
+    src: url(fonts/Mulish-Light.ttf);
+}
+@font-face {
+    font-family: Mulish-ExtraLight;
+    src: url(fonts/Mulish-ExtraLight.ttf);
+}
+@font-face {
+    font-family: RobotoMono;
+    src: url(fonts/RobotoMono-Medium.ttf);
+}
+* {
+    scroll-behavior: smooth;
+}
 
 h1, h2, h3, h4, h5, h6, a, li, p, ol, ul {
     font-family: Mulish;
