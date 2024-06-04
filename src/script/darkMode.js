@@ -1,16 +1,24 @@
-const article = document.querySelector("#darmModeID");
-document.addEventListener('keypress', (event) => {
-  var code = event.code;
-  if(code == "KeyD") {
-    if(article.getAttribute("data-theme") == "light")
-    {
-      document.querySelector("#darmModeID").dataset.theme = "dark";
-      var temp = document.getElementsByTagName("iframe").document;
-      var html = temp.getAttribute("theme") = "light"
+function change() {
+  console.log("change")
+  if (sessionStorage.getItem("darkMode") == "dark") {
+    sessionStorage.setItem("darkMode", "light");
+  }else {
+    sessionStorage.setItem("darkMode", "dark");
+  }
+}
 
-
+document.addEventListener('DOMContentLoaded', function() {
+  if(sessionStorage.getItem("darkMode") == "dark" && document.getElementById("checkbox") != null) {
+    document.getElementById("checkbox").checked = true;
+  }
+  if(sessionStorage.getItem("darkMode") != null) {
+    document.querySelector("#darmModeID").dataset.theme = sessionStorage.getItem("darkMode");
+  }else {
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      sessionStorage.setItem("darkMode", "dark")
     }else {
-      document.querySelector("#darmModeID").dataset.theme = "light";
+      sessionStorage.setItem("darkMode", "light")
     }
+    document.querySelector("#darmModeID").dataset.theme = sessionStorage.getItem("darkMode");
   }
 }, false);
