@@ -8,6 +8,14 @@ function change() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+  decide();
+}, false);
+
+window.setInterval( function(){
+  decide();
+},50)
+
+function decide() {
   if(sessionStorage.getItem("darkMode") == "dark" && document.getElementById("checkbox") != null) {
     document.getElementById("checkbox").checked = true;
   }
@@ -21,4 +29,4 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     document.querySelector("#darmModeID").dataset.theme = sessionStorage.getItem("darkMode");
   }
-}, false);
+}
