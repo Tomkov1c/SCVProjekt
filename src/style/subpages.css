@@ -4,6 +4,8 @@
 }
 body {
     display: block;
+
+    padding: 0.3rem;
 }
 
 h1 {
@@ -51,14 +53,14 @@ li {
 .highlightRow {
     display: flex;
 
-    width: calc(100% - 4vh);
+    width: 96.5%;
     height: 3rem;
 
     padding: 1.5rem;
     margin: 1rem 0;
 
     border-radius: 7px;
-    background-color: var(--colorSecundary);
+    background-color: var(--colorSecondary);
 }
 .highlightRow > img {
     height: 100%;
@@ -88,14 +90,16 @@ li {
     margin-right: 1vw;
 
     border-radius: 7px;
-    background-color: var(--colorSecundary);
+    outline: 3px solid transparent;
+    background-color: var(--colorSecondary);
 
     cursor: pointer;
 
-    transition: background-color 0.1s ease-in-out;
+    transition: outline 0.1s ease-in-out;
 }
 .submenuSplitSelect > div:hover{
-    background-color: var(--colorAccent);
+    outline: 3px solid var(--colorSecondary);
+    outline-offset: 2px;
 }
 .submenuSplitSelect > div:last-of-type{
     margin-right: 0vw;
@@ -174,38 +178,139 @@ form {
     margin-right: 2rem;
 }
 form > input {
-    margin: 0.4rem;
+    margin: 0.6rem 0;
     padding: 1rem;
 
     font-size: 1rem;
 
     color: var(--colorText);
-    background-color: var(--colorSecundary);
+    background-color: var(--colorSecondary);
 
     border: 0 solid transparent;
     border-radius: 8px;
+    outline: 3px solid transparent;
 
-    transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+    transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out, outline 0.1s ease-in-out;
 
 }
 form > input:focus {
-    outline: 0 solid transparent;
-    background-color: var(--colorPrimary);
-    color: var(--colorBackground);
+    outline: 3px solid var(--colorSecondary);
+    outline-offset: 2px;
+    background-color: var(--colorSecondary);
+    color: var(--colorText);
 
 }
 form > input::placeholder {
     color: var(--colorText);
 
 }
-#misc1 {
-
-    padding-top: 1rem;
+form > .display_inline_flex > input {
+    width: 100%;
     margin-top: 2rem;
+    padding: 1rem;
 
-    height: max-content;
-    overflow-y: auto;
-    overflow-x: hidden;
+    font-size: 1rem;
 
-    height: 45vh;
+    color: var(--colorText);
+    background-color: var(--colorAccent);
+
+    border: 0 solid transparent;
+    outline: 3px solid transparent;
+    border-radius: 8px;
+
+    transition: outline 0.1s ease-in-out;
+
+}
+form > .display_inline_flex > input:hover {
+    outline: 3px solid var(--colorAccent);
+    outline-offset: 2px;
+}
+
+
+
+
+
+
+
+.googleSideSwitch {
+	margin-top: 1rem;
+
+	width: 100%;
+
+	padding-bottom: 1vh;
+	margin-bottom: 5vh;
+	border-bottom: var(--colorSecondary) 1px solid;
+}
+
+.googleSideSwitch > input[type="radio"] {
+	display: none;
+}
+
+.googleSideSwitch > label {
+	font-size: 1.5rem;
+	font-family: Mulish;
+	font-weight: bolder;
+    color: var(--colorAccent);
+	border-bottom: 2px solid transparent;
+
+	margin-right: 2vw;
+
+	cursor: pointer;
+
+	transition: color 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
+}
+.googleSideSwitch > label:hover {
+	color: var(--colorPrimary);
+
+	cursor: pointer;
+
+	transition: color 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
+}
+
+.googleSideSwitch > input[type="radio"]:checked + label {
+	color: var(--colorPrimary);
+}
+
+
+
+
+.studentStats {
+    background-color: var(--colorSecondary);
+    display: flex;
+
+    padding: 1.5rem;
+    border-radius: 7px;
+
+    height: fit-content;
+}
+.studentStats > img {
+    height: 12rem;
+    border-radius: 999vw;
+    margin-right: 2rem;
+}
+.studentStats > div{
+    width: 100%;
+}
+.studentStats > div > p:first-of-type {
+    margin-top: 1.3rem;
+    width: 100%;
+
+    border-bottom: 1px solid var(--colorAccent);
+    margin-bottom: 1rem;
+
+    font-size: 3rem;
+    font-family: Mulish-Bold;
+}
+.studentStats > div > p:first-of-type > span {
+    font-size: 2rem;
+    font-family: Mulish-ExtraLight;
+}
+.studentStats > div > p {
+    font-size: 1rem;
+    font-family: Mulish-Bold;
+}
+.studentStats > div > p > span {
+    font-size: 1rem;
+    font-family: Mulish;
+    font-size: 900;
 }

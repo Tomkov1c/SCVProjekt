@@ -1,54 +1,22 @@
 @font-face {
-    font-family: Roboto-Black;
-    src: url(fonts/Roboto-Black.ttf);
-}
-@font-face {
-    font-family: Roboto-Bold;
-    src: url(fonts/Roboto-Bold.ttf);
-}
-@font-face {
-    font-family: Roboto-Regular;
-    src: url(fonts/Roboto-Regular.ttf);
-}
-@font-face {
-    font-family: Roboto-Light;
-    src: url(fonts/Roboto-Light.ttf);
-}
-@font-face {
-    font-family: Montserrat;
-    src: url(fonts/Montserrat-Regular.ttf);
-}
-@font-face {
-    font-family: Montserrat-Bold;
-    src: url(fonts/Montserrat-Bold.ttf);
-}
-@font-face {
-    font-family: Poppins;
-    src: url(fonts/Poppins-Medium.ttf);
-}
-@font-face {
-    font-family: Poppins-Bold;
-    src: url(fonts/Poppins-Bold.ttf);
-}
-@font-face {
-    font-family: Poppins-Black;
-    src: url(fonts/Poppins-Black.ttf);
-}
-@font-face {
-    font-family: Poppins-Light;
-    src: url(fonts/Poppins-Light.ttf);
-}
-@font-face {
     font-family: Mulish;
-    src: url(fonts/Mulish-Medium.ttf);
+    src: url(fonts/DMSans-Medium.ttf);
 }
 @font-face {
     font-family: Mulish-Light;
-    src: url(fonts/Mulish-Light.ttf);
+    src: url(fonts/DMSans-Light.ttf);
 }
 @font-face {
     font-family: Mulish-ExtraLight;
-    src: url(fonts/Mulish-ExtraLight.ttf);
+    src: url(fonts/DMSans-Thin.ttf);
+}
+@font-face {
+    font-family: Mulish-Bold;
+    src: url(fonts/DMSans-Bold.ttf);
+}
+@font-face {
+    font-family: Mulish-Black;
+    src: url(fonts/DMSans-Black.ttf);
 }
 @font-face {
     font-family: RobotoMono;
@@ -73,9 +41,9 @@ ol, ul {
 [data-theme="light"] {
     
     --colorText: #070c0e;
-    --colorBackground: #f1f7f9;
+    --colorBackground: #f3fbfe;
     --colorPrimary: #0094d9;
-    --colorSecundary: #88c7e4;
+    --colorSecondary: #88c7e4;
     --colorTerciary: #e5ebed;
     --colorAccent: #4fb5e4;
 
@@ -87,7 +55,7 @@ ol, ul {
     --colorText: #f1f6f8;
     --colorBackground: #060c0e;
     --colorPrimary: #24baff;
-    --colorSecundary: #1b5b79;
+    --colorSecondary: #1b5b79;
     --colorTerciary: #121719;
     --colorAccent: #1c81b0;
 
@@ -113,9 +81,8 @@ html {
 }
 
 
-.display_inline_flex {
-    display: inline-flex;
-    width: 100%;
+.displayFlex {
+    display: flex;
 }
 
 

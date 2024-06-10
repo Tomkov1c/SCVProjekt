@@ -63,7 +63,7 @@ body {
 
 }
 #sectionL > #active {
-    background-color: var(--colorSecundary);
+    background-color: var(--colorPrimary);
 
     cursor: default;
     opacity: 100%;
@@ -80,7 +80,7 @@ body {
     font-size: 1.3rem;
     width: 1rem;
 
-    color: var(--colorAccent);
+    color: var(--colorPrimary);
     margin: auto 10%;
 
     transition: color ease-in-out 0.1s;
