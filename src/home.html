@@ -3,47 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/dashboardSubpages.css">
+    <link rel="stylesheet" href="style/home.css">
     <link rel="stylesheet" href="style/global.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
+    <title>Nadzorna Plošča</title>
 </head>
 <body>
-    <section id="sectionQuickProfileView">
-        <img alt="" src="images/testProfilePicture.jpeg" id="sectionQuickProfileViewProfilePicture">
-        <div id="sectionQuickProfileViewUserDataWrapper">
-            <h1 id="sectionQuickProfileViewUserData-NameAndSurname">Ime in Priimek</h1>
-            <h1 id="sectionQuickProfileViewUserData-Role">Dijak</h1>
-        </div>
+    <section id="sectionL">
+        <button onclick="switchSub('subpages/home.php', this)" id="active"><i class="fa-solid fa-house"></i><p>Dom</p></button>
+        <button onclick="switchSub('subpages/vnos.php', this)"><i class="fa-solid fa-hashtag"></i><p>Vnos</p></button>
+        <button onclick="switchSub('subpages/pogled.php', this)"><i class="fa-solid fa-eye"></i><p>Pogled</p></button>
+        <button onclick="switchSub('subpages/razred.php', this)"><i class="fa-solid fa-compass-drafting"></i><p>3. TRB</p></button>
+        <button><i class="fa-solid fa-compass-drafting"></i><p>3. TRA</p></button>
+        <button onclick="switchSub('subpages/admin.php', this)"><i class="fa-solid fa-shield"></i><p>Admin - dodaj</p></button>
+        <!--Bottom-->
+        <button onclick="switchSub('subpages/nastavitve.php', this)" class="bottom"><i class="fa-solid fa-gear"></i><p>Nastavitve</p></button>
+        <button><i class="fa-solid fa-right-from-bracket"></i><p>Izpis</p></button>
     </section>
-    <h1 class="sectionTitle">Novi dosežki</h1>
-    <section id="sectionRecentAchivements">
-        <div class="sectionRecentAchivement">
-            <div class="sectionRecentAchivementFlex">
-                <div class="sectionRecentAchivementImageWrapper"><i class="fa-solid fa-trophy fa-fw sectionRecentAchivementImage" data-color="Pearl"></i></div>
-                <div class="sectionRecentAchivementTitles">
-                    <h1 class="sectionRecentAchivementTitle">Matemček</h1>
-                    <h3 class="sectionRecentAchivementType">Bronasto priznanje</h3>
-                </div>
-            </div>
-            <p class="sectionRecentAchivementKomentar">Zaradi števila točk dobiš 5 v redovalnico. LP Jadranka Golčar</p>
-            <a class="sectionRecentAchivementMoreDetail">Več informacij</a>
-        </div>
-    </section>
-    <h1 class="sectionTitle">Prihodnja Tekmovanja</h1>
-    <section id="sectionRecentAchivements">
-        <div class="sectionRecentAchivement">
-            <div class="sectionRecentAchivementFlex">
-                <div class="sectionRecentAchivementImageWrapper"><i class="fa-solid fa-trophy fa-fw sectionRecentAchivementImage" data-color="Pearl"></i></div>
-                <div class="sectionRecentAchivementTitles">
-                    <h1 class="sectionRecentAchivementTitle">Matemček</h1>
-                    <h3 class="sectionRecentAchivementType">Bronasto priznanje</h3>
-                </div>
-            </div>
-            <p class="sectionRecentAchivementKomentar">Zaradi števila točk dobiš 5 v redovalnico. LP Jadranka Golčar</p>
-            <a class="sectionRecentAchivementMoreDetail">Več informacij</a>
-        </div>
+    <section id="sectionR">
+        <iframe id="iframe" src="subpages/home.html" data-theme="dark" frameborder="0" sandbox="allow-same-origin allow-scripts">
+
+        </iframe>
+
     </section>
 </body>
-<script type="module" src="script/darkModeIFrame.js"></script>
+    <div id="devMenu">
+        <h1>Zavihki</h1>
+        <p>Kako bi naj zgledali zavihki na tej strani. Vsak je .html datoteka. Način navigacije na zavihke je pa odvisen od tega za kaj se bomo odločili.</p>
+        <div class="display_inline_flex">
+            <a href="subpages/home.html"><i class="fa-solid fa-house"></i><p>Dom</p></a>
+            <a href="subpages/vnos.html"><i class="fa-solid fa-hashtag"></i><p>Vnos</p></a>
+            <a href="subpages/pogled.html"><i class="fa-solid fa-eye"></i><p>Pogled</p></a>
+            <a href="subpages/"><i class="fa-solid fa-chair"></i><p>Razred</p></a>
+            <a href="subpages/nastavitve.html"><i class="fa-solid fa-gear"></i><p>Nastavitce</p></a>
+        </div>
+    </div>
+<script src="script/darkMode.js"></script>
+<script src="script/devMenu.js"></script>
+<script src="script/subpageSwitch.js"></script>
 </html>

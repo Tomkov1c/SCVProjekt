@@ -30,7 +30,7 @@ require_once 'povezava.php';
         <div id="sideL">
             <h1>Prijava</h1>
             <h2>Dijak / Dijakinja</h2>
-            <form action="" method="get">
+            <form action="" method="post">
                 <input type="password" name="emso" maxlength="13" class="inputField" placeholder="EMŠO" autofocus>
                 <input type="submit" value="Prijava" class="inputPrijava">
             </form>
@@ -63,7 +63,7 @@ require_once 'povezava.php';
     </html>
     <script src="script/darkMode.js"></script>
 <?php
-if ($_GET['action'] == 'login'){
+if (isset($_GET['action']) && $_GET['action'] == 'login'){
     $params = array ('client_id' =>$appid,
         'redirect_uri' =>'http://localhost/prijava.php',
         'response_type' =>'token',
@@ -91,6 +91,7 @@ if (array_key_exists ('access_token', $_POST))
         $_SESSION['msatg'] = 1;
         $_SESSION['uname'] = $rez["displayName"];
         $_SESSION['id'] = $rez["id"];
+        $_SESSION['email'] = $rez['mail'];
 
         if (isset($rez['id'])) {
             $ca = curl_init ();
@@ -120,11 +121,18 @@ if (array_key_exists ('access_token', $_POST))
     header ('Location: http://localhost/prijava.php');
     die();
 }
-if ($_GET['action'] == 'logout'){
-    session_destroy();
+if (isset($_GET['action']) && $_GET['action'] == 'logout'){
     unset ($_SESSION);
+    session_destroy();
     header ('Location: http://localhost/prijava.php');
     die();
+}
+
+if(isset($_SESSION['email']))
+{
+    $query = "SELECT emso FROM dijaki WHERE email = '".$_SESSION['email']."'";
+    $result = mysqli_query($conn, $query);
+    $_SESSION['emso'] = mysqli_fetch_assoc($result)['emso'];
 }
 
 if(isset($_POST['emso']))
@@ -135,12 +143,49 @@ if(isset($_POST['emso']))
     $result = mysqli_query($conn, $query);
     if (mysqli_num_rows($result) > 0) {
         $row = mysqli_fetch_assoc($result);
-        $_SESSION['ime'] = $row['ime'];
+        $_SESSION['uname'] = $row['ime'] . " " . $row['priimek'];
+        $_SESSION['stat'] = true;
 
         header('Location: home.php');
     }
-    else if ($_POST['emso'] == 999){
-        header("Location: admin.php");
-    } else {echo "Esihsdgfusdg";}
+    else {
+        $query = "SELECT ime FROM ucitelji WHERE emso = '".$_SESSION['emso']."'";
+        $result = mysqli_query($conn, $query);
+        if (mysqli_num_rows($result) > 0) {
+            $row = mysqli_fetch_assoc($result);
+            $_SESSION['uname'] = $row['ime'] . " " . $row['priimek'];
+            $_SESSION['stat'] = false;
+
+            header('Location: home.php');
+        } else {
+            echo "INVALID";
+        }
+    }
 
 }
+
+if(isset($_SESSION['emso']))
+    {
+        $query = "SELECT r.razred FROM dijaki d JOIN razredi_dijaki rd ON d.id_di = rd.id_di JOIN razredi r ON rd.id_r = r.id_r WHERE d.emso = '".$_SESSION['emso']."'";
+ 
+        $result = mysqli_query($conn, $query);
+
+        if (mysqli_num_rows($result) > 0) 
+        {
+            $row = mysqli_fetch_assoc($result);
+
+            $_SESSION['razred'] = $row['razred'];
+        } 
+        else
+        {
+            echo "<h2>Razred: Ni podatka</h2>";
+        }
+    }
+    else
+    {
+        echo "EMSO NI";
+    }
+
+    $_SESSION['admin'] = false;
+
+    ?>

@@ -11,15 +11,15 @@
 <?php session_start(); ?>
 <body>
     <section id="sectionL">
-        <button onclick="switchSub('subpages/home.html', this)" id="active"><i class="fa-solid fa-house"></i><p>Dom</p></button>
-        <button onclick="switchSub('subpages/vnos.html', this)"><i class="fa-solid fa-hashtag"></i><p>Vnos</p></button>
-        <button onclick="switchSub('subpages/pogled.html', this)"><i class="fa-solid fa-eye"></i><p>Pogled</p></button>
-        <button onclick="switchSub('subpages/razred.html', this)"><i class="fa-solid fa-compass-drafting"></i><p>3. TRB</p></button>
-        <button><i class="fa-solid fa-compass-drafting"></i><p>3. TRA</p></button>
+        <button onclick="switchSub('subpages/home.php', this)" id="active"><i class="fa-solid fa-house"></i><p>Dom</p></button>
+        <button onclick="switchSub('subpages/vnos.php', this)"><i class="fa-solid fa-hashtag"></i><p>Vnos</p></button>
+        <button onclick="switchSub('subpages/pogled.php', this)"><i class="fa-solid fa-eye"></i><p>Pogled</p></button>
+        <!-- <button onclick="switchSub('subpages/razred.html', this)"><i class="fa-solid fa-compass-drafting"></i><p>3. TRB</p></button>
+        <button><i class="fa-solid fa-compass-drafting"></i><p>3. TRA</p></button> -->
         <?php
             if ($_SESSION['stat'] == true) {
                 ?>
-                <button onclick="switchSub('subpages/admin.html', this)"><i class="fa-solid fa-shield"></i><p>Admin</p></button>
+                <button onclick="switchSub('subpages/admin.php', this)"><i class="fa-solid fa-shield"></i><p>Admin</p></button>
         <?php
             }
         ?>
@@ -28,7 +28,7 @@
         <button><i class="fa-solid fa-right-from-bracket" ></i><a href="prijava.php?action=logout">Izpis</a></button>
     </section>
     <section id="sectionR">
-        <iframe id="iframe" src="subpages/home.html" data-theme="dark" frameborder="0" sandbox="allow-same-origin allow-scripts">
+        <iframe id="iframe" src="subpages/home.php" data-theme="dark" frameborder="0" sandbox="allow-same-origin allow-scripts allow-forms">
 
         </iframe>
 
@@ -43,7 +43,6 @@
             <a href="subpages/pogled.html"><i class="fa-solid fa-eye"></i><p>Pogled</p></a>
             <a href="subpages/"><i class="fa-solid fa-chair"></i><p>Razred</p></a>
             <a href="subpages/nastavitve.html"><i class="fa-solid fa-gear"></i><p>Nastavitce</p></a>
-            <?php var_dump($_SESSION); ?>
         </div>
     </div>
 <script src="script/darkMode.js"></script>
