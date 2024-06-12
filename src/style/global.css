@@ -1,0 +1,158 @@
+@font-face {
+    font-family: Mulish;
+    src: url(fonts/DMSans-Medium.ttf);
+}
+@font-face {
+    font-family: Mulish-Light;
+    src: url(fonts/DMSans-Light.ttf);
+}
+@font-face {
+    font-family: Mulish-ExtraLight;
+    src: url(fonts/DMSans-Thin.ttf);
+}
+@font-face {
+    font-family: Mulish-Bold;
+    src: url(fonts/DMSans-Bold.ttf);
+}
+@font-face {
+    font-family: Mulish-Black;
+    src: url(fonts/DMSans-Black.ttf);
+}
+@font-face {
+    font-family: RobotoMono;
+    src: url(fonts/RobotoMono-Medium.ttf);
+}
+* {
+    scroll-behavior: smooth;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+h1, h2, h3, h4, h5, h6, a, li, p, ol, ul {
+    font-family: Mulish;
+
+    color: var(--colorText);
+}
+li {
+    margin-left: 2vw;
+}
+ol, ul {
+    margin-top: 0.5vh;
+}
+
+h1, h2, h3, h4, h5, h6, a, li, p {
+    font-family: Mulish;
+}
+
+[data-theme="light"] {
+    
+    --colorText: #070c0e;
+    --colorBackground: #f3fbfe;
+    --colorPrimary: #0094d9;
+    --colorSecondary: #88c7e4;
+    --colorTerciary: #e5ebed;
+    --colorAccent: #4fb5e4;
+
+    --colorFull: #ffffff;
+}
+[data-theme="dark"] {
+    
+
+    --colorText: #f1f6f8;
+    --colorBackground: #060c0e;
+    --colorPrimary: #24baff;
+    --colorSecondary: #1b5b79;
+    --colorTerciary: #121719;
+    --colorAccent: #1c81b0;
+
+    --colorFull: #000000;
+}
+
+::selection {
+    background-color: var(--colorHighlight);
+    color: var(--colorText);
+}
+
+header {
+    margin: 0 0 0 0;
+    margin-top: 0v;
+}
+
+body {
+    margin: 0 0 0 0;
+}
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+.displayFlex {
+    display: flex;
+}
+
+
+
+
+/*      Dev Menu        */
+#devMenu {
+    display: none;
+    position: fixed;
+
+    height: 70vh;
+    width: 70vw;
+
+    padding: 5vh 5vw;
+    margin: 10vh 10vw;
+
+    background-color: var(--colorFull);
+
+    border-radius: 7px;
+
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 2px solid var(--colorPrimary);
+}
+.display_inline_flex > a {
+    color: var(--colorText);
+
+    display: flex;
+
+    width: 100%;
+    height: fit-content;
+
+    margin: 2vh 0;
+    padding: 2vh;
+    margin-right: 1vw;
+
+    border-radius: 7px;
+    background-color: var(--colorBackground);
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+    transition: background-color ease-in-out 0.1s;
+}
+.display_inline_flex > a:hover {
+    background-color: var(--colorAccent);
+}
+.display_inline_flex > a > p {
+    color: var(--colorText);
+
+    display: block;
+    margin: auto 0vw;
+
+    font-weight: 600;
+}
+.display_inline_flex > a > i {
+    display: block;
+    margin: auto 1vw;   
+
+    font-size: 2.5rem;
+}
+.fa-html5 {
+    color: #e5532d;
+}
+.fa-css3-alt {
+    color: #0870c2;
+}

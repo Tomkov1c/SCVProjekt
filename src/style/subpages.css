@@ -1,0 +1,419 @@
+* {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+body {
+    display: block;
+
+    padding: 0.3rem;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 800;
+
+    margin-bottom: 1vh;
+}
+h2 {
+    font-size: 3rem;
+    font-weight: 700;
+
+    margin-bottom: 0.5vh;
+}
+h3 {
+    font-size: 2rem;
+    font-weight: 500;
+
+    margin-bottom: 0.2vh;
+}
+p,
+li {
+    font-size: 1rem;
+    font-weight: 500;
+}
+.keybind {
+    font-family: RobotoMono;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    opacity: 0.3;
+
+    margin: auto 0.1rem;
+
+    white-space: nowrap;
+
+    cursor: default;
+}
+.keybind > span {
+    padding: 0.2rem 0.4rem;
+
+    border: 2.5px var(--colorText) solid;
+    border-radius: 4px;
+}
+
+.highlightRow {
+    display: flex;
+
+    width: 96.5%;
+    height: 3rem;
+
+    padding: 1.5rem;
+    margin: 1rem 0;
+
+    border-radius: 7px;
+    background-color: var(--colorSecondary);
+}
+.highlightRow > img {
+    height: 100%;
+
+    border-radius: 999vw;
+
+}
+.highlightRow > .name {
+    width: fit-content;
+
+    margin: auto 1.2rem;
+
+}
+
+.submenuSplitSelect {
+    display: flex;
+}
+
+.submenuSplitSelect > div{
+    display: flex;
+
+    width: 100%;
+    height: 1.7rem;
+
+    padding: 1vh;
+    margin: 2vh 0;
+    margin-right: 1vw;
+
+    border-radius: 7px;
+    outline: 3px solid transparent;
+    background-color: var(--colorSecondary);
+
+    cursor: pointer;
+
+    transition: outline 0.1s ease-in-out;
+}
+.submenuSplitSelect > div:hover{
+    outline: 3px solid var(--colorSecondary);
+    outline-offset: 2px;
+}
+.submenuSplitSelect > div:last-of-type{
+    margin-right: 0vw;
+}
+.submenuSplitSelect > div > img {
+    height: 100%;
+
+    border-radius: 999vw;
+
+}
+.submenuSplitSelect > div > p {
+    width: fit-content;
+
+    margin: auto 1.2rem;
+
+}
+
+.calloutOption{
+    display: flex;
+
+    width: calc(100% - 4vh);
+    height: 4vh;
+
+    padding: 1.4rem;
+    margin: 1vh 0;
+
+    border-radius: 9px;
+    background-color: var(--colorBackground);
+
+    color: var(--colorText);
+}
+.calloutOption > i{
+    display: block;
+
+    margin: auto 0.8rem;
+    margin-right: 1.7rem;
+    font-size: 1.5rem;
+}
+.calloutOption > div{
+    margin: auto 0;
+}
+.calloutOption > div > p:first-child{
+    font-family: Mulish-Light;
+
+    font-size: 1rem;
+    margin: 0;
+}
+.calloutOption > div > p:last-child{
+    font-family: Mulish-Light;
+    opacity: 0.9;
+    font-size: 0.7rem;
+
+    margin: 0;
+}
+.calloutOption > input[type = "checkbox"] {
+    width: 5%;
+    height: 80%;
+    display: block;
+
+    background-color: var(--colorText);
+    accent-color: var(--colorPrimary);
+
+    outline: none;
+
+    margin: auto 1.2rem auto auto;
+
+    border-radius: 100vw;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    margin-top: 0.7rem;
+    margin-right: 2rem;
+}
+form > input {
+    margin: 0.6rem 0;
+    padding: 1rem;
+
+    font-size: 1rem;
+    font-family: Mulish;
+
+    color: var(--colorBackground);
+    background-color: var(--colorPrimary);
+
+    border: 0 solid transparent;
+    border-radius: 8px;
+    outline: 3px solid transparent;
+
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out, background-color 0.1s ease-in-out, color 0.1s ease-in-out, outline 0.1s ease-in-out;
+
+}
+form:has(input:focus) > input:not(:focus),
+form:has(input:focus) > .display_inline_flex > input:not(:focus) {
+    opacity: 0.85;
+}
+form > input:focus {
+    outline: 3px solid var(--colorPrimary);
+    outline-offset: 2px;
+    background-color: var(--colorPrimary);
+    color: var(--colorBackground);
+    font-family: Mulish;
+
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+}
+form > input::placeholder {
+    color: var(--colorBackground);
+    font-family: Mulish-Light;
+
+    opacity: 0.5;
+
+}
+form > .display_inline_flex > input {
+    width: 100%;
+    margin-top: 0.6rem;
+    padding: 1rem;
+
+    font-size: 1rem;
+
+    color: var(--colorBackground);
+    background-color: var(--colorPrimary);
+
+    border: 0 solid transparent;
+    outline: 3px solid transparent;
+    border-radius: 8px;
+
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out, outline 0.1s ease-in-out;
+
+}
+form > .display_inline_flex > input:hover,
+form > .display_inline_flex > input:focus {
+    outline: 3px solid var(--colorPrimary);
+    outline-offset: 2px;
+}
+
+
+
+
+
+
+
+.googleSideSwitch {
+	margin-top: 1rem;
+
+	width: 100%;
+
+	padding-bottom: 1vh;
+	margin-bottom: 5vh;
+	border-bottom: var(--colorSecondary) 1px solid;
+}
+
+.googleSideSwitch > input[type="radio"] {
+	display: none;
+}
+
+.googleSideSwitch > label {
+	font-size: 1.5rem;
+	font-family: Mulish;
+	font-weight: bolder;
+    color: var(--colorAccent);
+	border-bottom: 2px solid transparent;
+
+	margin-right: 2vw;
+
+	cursor: pointer;
+
+	transition: color 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
+}
+.googleSideSwitch > label:hover {
+	color: var(--colorPrimary);
+
+	cursor: pointer;
+
+	transition: color 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
+}
+
+.googleSideSwitch > input[type="radio"]:checked + label {
+	color: var(--colorPrimary);
+}
+
+
+
+
+.studentStats {
+    background-color: var(--colorPrimary);
+    display: flex;
+
+    padding: 1.5rem;
+    border-radius: 7px;
+
+    height: fit-content;
+}
+.studentStats > img {
+    height: 12rem;
+    border-radius: 999vw;
+    margin-right: 2rem;
+}
+.studentStats > div{
+    width: 100%;
+}
+.studentStats > div > p:first-of-type {
+    margin-top: 1.3rem;
+    width: 100%;
+
+    color: var(--colorBackground);
+
+    border-bottom: 1px solid var(--colorAccent);
+    margin-bottom: 1rem;
+
+    font-size: 3rem;
+    font-family: Mulish-Bold;
+}
+.studentStats > div > p:first-of-type > span {
+    font-size: 2rem;
+    font-family: Mulish-ExtraLight;
+}
+.studentStats > div > p {
+    font-size: 1rem;
+    font-family: Mulish-Bold;
+
+    color: var(--colorBackground);
+}
+.studentStats > div > p > span {
+    font-size: 1rem;
+    font-family: Mulish;
+    font-size: 900;
+}
+
+body > form > select {
+    background-color: var(--colorPrimary);
+    color: var(--colorBackground);
+    font-family: Mulish-Bold;
+    font-size: 1.2rem;
+
+    padding: 1rem;
+
+    border: 0 solid transparent;
+    outline: 3px solid transparent;
+    outline-offset: 2px;
+
+    transition: outline 0.2s ease-in-out;
+
+    border-radius: 6px;
+
+    margin-bottom: 1rem;
+}
+form > select:hover {
+    outline: 3px solid var(--colorPrimary);
+    outline-offset: 2px;
+}
+form > select > option {
+    color: var(--colorBackground);
+    font-family: Mulish;
+}
+form > select > option:focus {
+    background-color: var(--colorPrimary);
+}
+.highlightRow > input[type = 'submit'],
+.highlightRow > button:first-of-type {
+    margin-left: auto;
+    margin-right: 0.6rem;
+}
+.highlightRow > input[type = 'submit'],
+.highlightRow > button {
+    display: flex;
+    outline: 0 solid transparent;
+    border: 0 solid transparent;
+
+    border-radius: 7px;
+
+    padding: 0 0.5rem;
+
+    width: auto;
+
+    background-color: var(--colorPrimary);
+
+    outline: 3px solid transparent;
+    outline-offset: 2px;
+
+    transition: outline 0.2s ease-in-out;
+
+}
+.highlightRow > input[type = 'submit']:hover,
+.highlightRow > button:hover,
+.highlightRow > button:focus {
+    outline: 3px solid var(--colorPrimary);
+    outline-offset: 2px;
+
+    cursor: pointer;
+}
+.highlightRow > button > i {
+    display: block;
+    margin: auto 0;
+    padding: 0 0.6rem;
+
+    color: var(--colorBackground);
+}
+.highlightRow > button > p {
+    display: block;
+    margin: auto 0;
+
+    margin-right: 1rem;
+
+    color: var(--colorBackground);
+}
+
+form > .highlightRow {
+    margin: 0;
+}
+form:first-of-type > .highlightRow {
+    margin-top: 3rem;
+}

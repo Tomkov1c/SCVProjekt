@@ -1,0 +1,436 @@
+* {
+    padding: 0;
+    margin: 0;
+
+    z-index: 5;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin: 1rem 0 0 0;
+    padding: 0 0 0 0;
+
+    line-height: 1.5;
+
+    font-family: Mulish;
+    color: var(--colorText);
+}
+body {
+    /* background-color: var(--colorBackground); */
+
+    margin-top: 7rem;
+    background-image: radial-gradient(
+        rgba(56, 56, 56, 0.108) 1px, 
+        var(--colorBackground) 1px
+    );
+    background-position: 50% 50%;
+    background-size: 1.1rem 1.1rem;
+    /* background-attachment: fixed; */
+
+    overflow: hidden;
+}
+a {
+    text-decoration: none;
+}
+hr {
+    width: 25vw;
+    margin-left: 4vw;
+    margin-right: 5vw;
+    margin-top: 9%;
+    color: #161925;
+}
+section {
+    position: relative;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    height: fit-content;
+
+    scroll-behavior: smooth;
+    scroll-snap-type: center;
+}
+
+#blob {
+	aspect-ratio: 1;
+	position: absolute;
+	left: 120vw;
+	top: 50%;
+	translate: -50% -50%;
+	animation: rotate 10s infinite;
+	opacity: 0.2;
+	z-index: -3;
+	height: 60%;
+	border-radius: 100vw;
+}
+
+/*      Header       */
+header {
+    height: 5rem;
+    display: inline-flex;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: transparent;
+
+    border-bottom: 1px solid transparent;
+    
+    transition: border-bottom ease-in-out 0.2s;
+}
+.headerBorder {
+    background-color: #f3fbfeb8;
+    border-bottom: 1px solid var(--colorTerciary);
+
+    backdrop-filter: blur(20px);
+
+    transition: border-bottom ease-in-out 0.2s, background-color ease-in-out 0.2s;
+}
+#SCV {
+    height: 8vh;
+    margin-left: 5vw;
+    margin-top: 2vh;
+    -webkit-filter: (1) invert(1);
+}
+#headerPointers {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: 5vw;
+}
+.headerPointerButton {
+    color: var(--colorText);
+    font-family: Mulish;
+    margin-left: 2rem;
+
+    transition: color ease-in-out 0.2s;
+}
+.headerPointerButton:hover {
+    color: gray;
+}
+
+#sec1 {
+    /* background-color: aqua; */
+}
+#sec1 > h1 {
+    display: block;
+    font-size: 7rem;
+    line-height: 6.5rem;
+
+    text-align: center;
+
+    text-transform: uppercase;
+    font-family: Mulish-Black;
+    font-weight: 900;
+
+    width: 70%;
+    margin: 0 auto;
+}
+#sec1 > h1:first-of-type {
+    padding-top: 4rem;
+}
+#sec1 > p {
+    display: block;
+    font-size: 1rem;
+    padding-top: 1.5rem;
+
+    text-align: center;
+    font-family: Mulish;
+    font-weight: 900;
+
+    color: var(--colorAccent);
+
+    width: 70%;
+    margin: 0 auto;
+}
+#sec1 > a {
+    display: flex;
+    width: 10rem;
+
+    padding: 1.6rem 1rem;
+    margin: 2rem auto;
+    border-radius: 7px;
+
+    outline: 3px solid transparent;
+    background-color: var(--colorPrimary);
+
+    transition: outline 0.1s ease-in-out;
+}
+#sec1 > a:hover {
+    outline: 3px solid var(--colorPrimary);
+    outline-offset: 2px;
+}
+#sec1 > a > i {
+    color: var(--colorText);
+
+    font-size: 1.8rem;
+    margin-right: 1rem;
+    margin-left: auto;
+}
+#sec1 > a > p {
+    color: var(--colorText);
+
+    margin: auto 0;
+    margin-right: auto;
+
+    font-family: Mulish-Bold;
+    
+}
+#sec1 > img {
+    width: 40vw;
+
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    
+}
+
+
+
+
+
+#sec2 {
+    /* background-color: var(--colorAccent); */
+
+    width: calc(90vw - 4rem);
+    padding: 2rem;
+    margin-top: 3rem;
+
+    border-radius: 22px;
+
+    padding-top: 0;
+    padding-bottom: 9rem;
+}
+.sectionTitle {
+    font-size: 4rem;
+    color: var(--colorText);
+
+    font-family: Mulish-Bold;
+    font-weight: 900;
+}
+.sectionTitle > i {
+    margin: auto 0;
+    margin-right: 1vw;
+
+    color: var(--colorAccent);
+}
+#sec2 > img {
+    width: 40%;
+    height: 50rem;
+    object-fit: cover;
+
+    margin: auto auto;
+    display: block;
+
+    border-radius: 12px;
+
+    outline: 2px solid var(--colorBackground);
+
+    box-shadow: 16px 16px 0px 0px var(--colorSecondary);
+
+    transition: box-shadow 0.3s ease-in-out;
+}
+#sec2 > img:hover {
+
+    box-shadow: 0px 0px 0px 0px var(--colorSecondary);
+}
+#sec2 > div {
+    width: 50%;
+
+    margin: auto 0;
+}
+
+#sec3 {
+    background-color: var(--colorAccent);
+    border-radius: 7px;
+    padding: 2rem;
+    margin-bottom: 4rem;
+
+    width: calc(90vw - 2*2vw);
+}
+#sec3 > h1 {
+    margin: 0 auto;
+    width: fit-content;
+}
+#sec3 > h1 > i {
+    margin: auto 0;
+    margin-right: 1vw;
+
+    color: var(--colorBackground);
+}
+#sec3 > p {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    margin: 1rem 0;
+
+    color: var(--colorBackground);
+    opacity: 0.8;
+}
+#sec3 > div {
+    position: relative; /* Ensure pseudo-element positioning is relative to this */
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+
+    transform: rotate(-2deg);
+    margin: 6rem 0;
+
+}
+#sec3 > div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle, transparent 30%, var(--colorAccent) 100%);
+    z-index: 1; /* Ensure it overlays the children */
+    pointer-events: none; /* Allow interaction with underlying content */
+
+}
+#sec3 > div > div {
+    display: flex;
+    white-space: nowrap;
+    animation: sideScroll 15s linear infinite;
+    position: relative; /* Ensure content is above the gradient */
+    z-index: 0; /* Ensure it overlays the gradient */
+}
+#sec3 > div > div > div {
+    display: flex;
+
+    background-color: var(--colorPrimary);
+    margin: 1rem;
+    padding: 1rem;
+
+    width: 25rem;
+    height: 4rem;
+
+    border-radius: 8px;
+}
+#sec3 > div > div > div > img {
+    margin: auto 0;
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+    width: 15%;
+    border-radius: 100vw;
+
+    display: block;
+}
+
+#sec3 > div > div > div > .ime {
+    color: var(--colorBackground);
+    font-size: 1.2rem;
+    font-family: Mulish-Black;
+
+    margin: auto 0;
+    margin-right: 0.4rem;
+
+    display: block;
+    cursor: default;
+}
+
+#sec3 > div > div > div > .leto {
+    color: var(--colorTerciary);
+    opacity: 0.7;
+    font-size: 0.8rem;
+    font-family: Mulish-Light;
+
+    margin: auto 0;
+    margin-right: 2rem;
+
+    display: block;
+    cursor: default;
+
+}
+#sec3 > div > div > div > .tocke {
+    color: var(--colorBackground);
+    font-size: 1.5rem;
+    font-family: Mulish-Bold;
+    padding: 0.3rem 0.7rem;
+    border-radius: 7px;
+    background-color: var(--colorSecondary);
+
+    margin: auto 0;
+
+    display: block;
+    cursor: default;
+
+}
+
+@keyframes sideScroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-55.5%);
+    }
+}
+#sec3 > div > div::after {
+    content: attr(data-text);
+    display: inline-block;
+    white-space: nowrap;
+}
+
+#sec4 > h1 {
+    margin: auto auto;
+    width: 50%;
+}
+#sec4 > div {
+    width: 50%;
+}
+#sec4 > div > a {
+    background-color: var(--colorAccent);
+
+    display: flex;
+    width: calc(100% - 2*1.5rem);
+    padding: 1.5rem;
+    margin: 1rem 0;
+
+    border-radius: 8px;
+
+    outline: 3px solid transparent;
+    outline-offset: 2px;
+
+    transition: outline ease-in-out 0.1s;
+}
+#sec4 > div > a:hover {
+    outline: 3px solid var(--colorAccent);
+    outline-offset: 2px;
+}
+#sec4 > div > a > img {
+    width: 20%;
+
+    border-radius: 8px;
+}
+#sec4 > div > a > div {
+    width: max-content;
+    margin: auto 0;
+    margin-left: 1rem;
+
+}
+#sec4 > div > a > div > h1 {
+    width: max-content;
+    margin-top: 0.4rem;
+
+    font-family: Mulish-Black;
+    font-size: 2.2rem !important;
+    color: var(--colorBackground);
+}
+#sec4 > div > a > div > p {
+    margin: auto 0;
+    margin-top: -0.5rem;
+    margin-left: 0.3rem;
+
+    font-family: Mulish;
+    font-size: 0.9rem;
+    color: var(--colorTerciary);
+    opacity: 0.8;
+}
+
+
+
+
+footer {
+    background-color: var(--colorTerciary);
+    height: 30vh;
+}

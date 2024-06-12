@@ -1,0 +1,135 @@
+* {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+html {
+    background-color: var(--colorBackground);
+    
+    overflow: hidden;
+
+}
+body {
+    display: inline-flex;
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+/*                              */
+
+#sectionL {
+    background-color: var(--colorTerciary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+
+    width: 15vw;
+    height: 92vh;
+
+    margin: 1rem;
+    margin-right: 0;
+    padding: 2.5vh 0;
+
+    border-radius: 8px;
+
+    overflow-y: auto;
+
+}
+
+#sectionL > button {
+    display: flex;
+    position: relative;
+
+    width: 80%;
+    height: 3.7rem;
+
+    margin: 2.5% 10%;
+    padding: 5% 1.5%;
+
+    background-color: transparent;
+    border: 0 solid transparent;
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    transition: background-color ease-in-out 0.1s;
+
+    opacity: 50%;
+}
+#sectionL > button > p  {
+    user-select: none;
+}
+#sectionL > .bottom {
+    margin: auto 10% 0% 10% !important;
+
+}
+#sectionL > #active {
+    background-color: var(--colorPrimary);
+
+    cursor: default;
+    opacity: 100%;
+
+}
+#sectionL > #active > i,
+#sectionL > #active > p{
+    color: var(--colorBackground);
+
+}
+#sectionL > button > i {
+    display: block;
+
+    font-size: 1.3rem;
+    width: 1rem;
+
+    color: var(--colorPrimary);
+    margin: auto 10%;
+
+    transition: color ease-in-out 0.1s;
+}
+#sectionL > button > p,
+#sectionL > button > a {
+    display: block;
+
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+
+    width: max-content;
+    margin: auto 0;
+
+    transition: color ease-in-out 0.1s;
+
+}
+#sectionL > button:hover {
+    opacity: 100%;
+}
+
+
+
+
+/*                  */
+#sectionR {
+    background-color: var(--colorTerciary);
+    display: block;
+    position: relative;
+    overflow-x: hidden;
+
+    width: 79vw;
+    height: 89vh;
+
+    margin: 1rem;
+    padding: 4vh 2.5vw;
+
+    border-radius: 8px;
+
+    overflow-y: hidden;
+}
+#sectionR > iframe {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 14px;
+
+}

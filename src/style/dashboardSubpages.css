@@ -1,0 +1,264 @@
+* {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+html {
+    scrollbar-width: none;  /* Firefox */
+
+}
+html::-webkit-scrollbar {
+    display: none;
+}
+
+/*                                  */
+/*                                  */
+/*                                  */
+/*                                  */
+/*                                  */
+/*                                  */
+/*                                  */
+/*                                  */
+/*                Home              */
+#sectionQuickProfileView {
+    display: inline-flex;
+    margin-top: 5vh;
+}
+#sectionQuickProfileViewProfilePicture {
+    width: 20vw;
+    border-radius: 100vw;
+}
+#sectionQuickProfileViewUserDataWrapper {
+    width: 75vw;
+
+    position: relative;
+
+    margin-left: 5vw;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+#sectionQuickProfileViewUserData-NameAndSurname {
+    font-family: Poppins-Bold;
+    font-size: 4vw;
+    color: var(--colorText);
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+#sectionQuickProfileViewUserData-Role {
+    font-family: Poppins-Bold;
+    font-size: 1.5vw;
+    color: var(--colorAccent);
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+#sectionRecentAchivements {
+    display: flex;
+    overflow-x: scroll;
+
+    width: 100%;
+    margin-top: 2vh;
+
+    scrollbar-width: none;  /* Firefox */
+
+}
+#sectionRecentAchivements::-webkit-scrollbar {
+    display: none;
+}
+.sectionTitle {
+    font-family: Poppins-Bold;
+    font-size: 2vw;
+    color: var(--colorText);
+
+    margin-top: 7vh;
+}
+.sectionRecentAchivement {
+    background-color: var(--colorBackground);
+    border: 1px solid var(--McolorAccent);
+
+    border-radius: 12px;
+
+    height: 30vh;
+
+    min-width: 35vw;
+
+    margin-right: 2vw;
+}
+.sectionRecentAchivementImageWrapper {
+    width: fit-content;
+
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+    
+    margin-top: 2vh;
+    margin-left: 1.5vw;
+
+    margin-bottom: 2vh;
+    
+    border-radius: 100vw;
+    border: 1vw solid var(--colorAccent);
+
+    background-color: var(--colorAccent);
+}
+.sectionRecentAchivementImage {
+    position: relative;
+    display: block;
+    font-size: 3vw;
+
+    color: var(--colorAchivementsBronze);
+    background-color: var(--colorAccent);
+
+    padding-top: 0.6vw;
+    padding-bottom: 0.6vw;
+
+    height: max-content;
+
+}
+.sectionRecentAchivementImage[data-color="Bronze"] {
+    color: var(--colorAchivementsBronze) !important;
+}
+.sectionRecentAchivementImage[data-color="Silver"] {
+    color: var(--colorAchivementsSilver) !important;
+}
+.sectionRecentAchivementImage[data-color="Gold"] {
+    color: var(--colorAchivementsGold) !important;
+}
+.sectionRecentAchivementImage[data-color="Diamond"] {
+    color: var(--colorAchivementsDiamond) !important;
+}
+.sectionRecentAchivementImage[data-color="Pearl"] {
+    color: var(--colorAchivementsPearl) !important;
+}
+
+.sectionRecentAchivementFlex {
+    display: flex;
+}
+.sectionRecentAchivementTitles {
+    width: fit-content;
+
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 2vw;
+}
+.sectionRecentAchivementTitle {
+    font-family: Poppins-Bold;
+    font-size: 2svw;
+    color: var(--colorText);
+    
+    line-height: 2.5vh;
+}
+.sectionRecentAchivementType {
+    font-family: Poppins-Light;
+    font-size: 1.2vw;
+    color: var(--colorAccent);
+
+    line-height: 3vh;
+
+}
+.sectionRecentAchivementKomentar {
+    width: 30vw;
+    height: 10vh;
+
+    font-family: Poppins-Light;
+    font-size: 1.2vw;
+    color: var(--colorAccent);
+
+    line-height: 2vh;
+
+    margin-left: 1.5vw;
+}
+.sectionRecentAchivementMoreDetail {
+
+    padding: 1.5vh 2vw;
+
+    font-family: Poppins;
+    font-size: 1.1vw;
+    color: var(--colorText);
+
+    border-radius: 7px;
+
+    background-color: var(--colorPrimary);
+
+    margin-left: 1.5vw;
+    margin-top: auto;
+    margin-bottom: 1vh;
+
+
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+
+}
+.sectionRecentAchivementMoreDetail:hover {
+    color: var(--colorBackground);
+
+}
+/*                                  */
+/*                                  */
+/*                                  */
+/*                                  */
+/*                                  */
+/*                                  */
+/*                                  */
+/*                                  */
+/*          Nastavitve              */
+#sectionThemeSelect {
+    position: relative;
+
+    width: 100%;
+    height: 45vh;
+}
+.sectionGeneralTitle {
+    font-family: Poppins;
+    font-size: 2vw;
+}
+#sectionThemeSelectThemesWrapper {
+    display: flex;
+    height: 70%;
+
+}
+
+.sectionThemeSelectThemeButton {
+    background-color: var(--colorBackground);
+
+    width: 25%;
+    height: 90%;
+    padding: 2vh 1.5vw;
+
+    margin-right: 2vw;
+
+    border-radius: 12px;
+}
+
+
+.sectionThemeSelectThemeButtonImage {
+
+    height: 80%;;
+    width: 25vw;
+    border-radius: 10px;
+
+    background-color: var(--colorSecundary);
+    overflow: hidden;
+
+    border: 1px solid var(--colorText);
+}
+.sectionThemeSelectThemeButtonImageAa {
+    font-family: Poppins-Bold;
+    font-size: 2vw;
+    color: var(--colorText);
+    background-color: var(--colorBackground);
+    padding: 2vh 2vw;
+
+    height: 90%;
+    border-top-left-radius: 12px;
+
+    margin-left: 50%;
+    margin-top: 20%;
+
+    box-shadow: 0px 0px 27px -18px var(--colorShadow);
+}
+.sectionThemeSelectThemeButtonText {
+    font-family: Poppins;
+    font-size: 1.5vw;
+
+    padding-left: 1vw;
+}
