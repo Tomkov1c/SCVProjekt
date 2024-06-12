@@ -373,7 +373,8 @@ form > select {
 
     margin: 0.6rem 0;
 }
-form > select:hover {
+form > select:hover,
+form > select:focus {
     outline: 3px solid var(--colorPrimary);
     outline-offset: 2px;
 }
