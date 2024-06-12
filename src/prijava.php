@@ -51,7 +51,7 @@ require_once 'povezava.php';
             ?>
         </div>
         <div id="sideR">
-
+            <img src="images/ers.jpg">
         </div>
     </section>
 
