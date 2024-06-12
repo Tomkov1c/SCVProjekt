@@ -107,7 +107,7 @@ header {
 }
 
 #sec1 {
-    /* background-color: aqua; */
+    margin-bottom: 10rem;
 }
 #sec1 > h1 {
     display: block;
@@ -171,14 +171,6 @@ header {
     margin-right: auto;
 
     font-family: Mulish-Bold;
-    
-}
-#sec1 > img {
-    width: 40vw;
-
-    display: block;
-    position: relative;
-    margin: 0 auto;
     
 }
 
