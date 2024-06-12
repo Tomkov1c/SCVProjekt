@@ -11,7 +11,12 @@
 <body>
     <h1>Obvestila</h1>
     <p>Pregljete obvestila ki ste jih prejeli.</p>
-
+    <br>
+    <div class="highlightRow">
+        <img src='../images/testProfilePicture.jpeg' alt='Loading'>
+        <p class='name'>Jure Primer <span>voluptatibus blanditiis harum</span></p>
+        <input type='submit' value='Submit'>
+    </div>
 </body>
 <script src="../script/darkMode.js"></script>
 </html>

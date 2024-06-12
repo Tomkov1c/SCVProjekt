@@ -74,6 +74,16 @@ li {
     margin: auto 1.2rem;
 
 }
+.highlightRow > .name > span {
+    width: fit-content;
+    font-family: Mulish-Light;
+    opacity: 0.8;
+
+    font-size: 0.9rem;
+
+    margin-left: 1rem;
+
+}
 
 .submenuSplitSelect {
     display: flex;
@@ -177,7 +187,18 @@ form {
     margin-top: 0.7rem;
     margin-right: 2rem;
 }
+form > .displayFlex > input[type = 'date'],
+form > .displayFlex > input[type = 'file'] {
+    width: calc(50% - 2rem);
+    margin-right: 1em;
+}
+form > .displayFlex > input[type = 'file'] {
+    width: calc(50% - 2rem);
+    margin-right: 0em !important;
+}
+form > .displayFlex > input,
 form > input {
+    display: block;
     margin: 0.6rem 0;
     padding: 1rem;
 
@@ -195,7 +216,8 @@ form > input {
     transition: opacity 0.2s ease-in-out, background-color 0.1s ease-in-out, color 0.1s ease-in-out, outline 0.1s ease-in-out;
 
 }
-form:has(input:focus) > input:not(:focus),
+form:has(*:focus) > *:not(:focus),
+form:has(*:hover) > *:not(:hover),
 form:has(input:focus) > .display_inline_flex > input:not(:focus) {
     opacity: 0.85;
 }
@@ -333,7 +355,7 @@ form > .display_inline_flex > input:focus {
     font-size: 900;
 }
 
-body > form > select {
+form > select {
     background-color: var(--colorPrimary);
     color: var(--colorBackground);
     font-family: Mulish-Bold;
@@ -349,7 +371,7 @@ body > form > select {
 
     border-radius: 6px;
 
-    margin-bottom: 1rem;
+    margin: 0.6rem 0;
 }
 form > select:hover {
     outline: 3px solid var(--colorPrimary);
