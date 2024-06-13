@@ -37,17 +37,6 @@
 
     </section>
 </body>
-    <div id="devMenu">
-        <h1>Zavihki</h1>
-        <p>Kako bi naj zgledali zavihki na tej strani. Vsak je .html datoteka. Način navigacije na zavihke je pa odvisen od tega za kaj se bomo odločili.</p>
-        <div class="display_inline_flex">
-            <a href="subpages/home.html"><i class="fa-solid fa-house"></i><p>Dom</p></a>
-            <a href="subpages/vnos.html"><i class="fa-solid fa-hashtag"></i><p>Vnos</p></a>
-            <a href="subpages/pogled.html"><i class="fa-solid fa-eye"></i><p>Pogled</p></a>
-            <a href="subpages/"><i class="fa-solid fa-chair"></i><p>Razred</p></a>
-            <a href="subpages/nastavitve.html"><i class="fa-solid fa-gear"></i><p>Nastavitce</p></a>
-        </div>
-    </div>
 <script src="script/darkMode.js"></script>
 <script src="script/devMenu.js"></script>
 <script src="script/subpageSwitch.js"></script>

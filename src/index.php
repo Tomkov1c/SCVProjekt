@@ -1,3 +1,6 @@
+<?php
+require_once 'povezava.php';
+?>
 <!DOCTYPE html>
 <html lang="en" id="darmModeID" data-theme="light">
 <head>
@@ -40,15 +43,25 @@
         <p>Quae culpa alias omnis ea blanditiis sint obcaecati exercitationem porro, distinctio quibusdam suscipit voluptatibus veniam repellendus beatae, beatae ratione deserunt sapiente hic, quam assumenda voluptatibus ipsa nulla veritatis dignissimos?</p>
         <div>
             <div>
+                <?php
+                    for ($i = 0; $i <= 2; $i++) { 
+                        $query = "SELECT d.id_di, d.ime, d.priimek, sl.leto, COUNT(dd.id_dd) AS mentions_count FROM dijaki d LEFT JOIN dijaki_dosezki dd ON d.id_di = dd.id_di LEFT JOIN razredi_dijaki rd ON d.id_di = rd.id_di LEFT JOIN solska_leta sl ON rd.id_sl = sl.id_sl GROUP BY d.id_di, d.ime, d.priimek, sl.leto ORDER BY mentions_count DESC LIMIT 5;";
+                        $result = mysqli_query($conn, $query);
+                        while($row = mysqli_fetch_assoc($result)) {
+                            echo '<div>';
+                            echo '<img src="images/testProfilePicture.jpeg" alt="">';
+                            echo "<p class='ime'>" . $row['ime'] . " " . $row['priimek'] . "</p>";
+                            echo "<p class='leto'>" . $row['leto'] . "</p>";
+                            echo "<p class='tocke'>" . $row['mentions_count'] . "</p>";
+                            echo '</div>';
+
+                        }
+                    }
+                ?>
+                <!-- 
                 <div><img src="images/testProfilePicture.jpeg" alt=""><p class="ime">Jure Primer</p><p class="leto">2024 / 2025</p><p class="tocke">437</p></div>
-                <div><img src="images/testProfilePicture.jpeg" alt=""><p class="ime">Jure Primer</p><p class="leto">2024 / 2025</p><p class="tocke">437</p></div>
-                <div><img src="images/testProfilePicture.jpeg" alt=""><p class="ime">Jure Primer</p><p class="leto">2024 / 2025</p><p class="tocke">437</p></div>
-                <div><img src="images/testProfilePicture.jpeg" alt=""><p class="ime">Jure Primer</p><p class="leto">2024 / 2025</p><p class="tocke">437</p></div>
-                <div><img src="images/testProfilePicture.jpeg" alt=""><p class="ime">Jure Primer</p><p class="leto">2024 / 2025</p><p class="tocke">437</p></div>
-                <div><img src="images/testProfilePicture.jpeg" alt=""><p class="ime">Jure Primer</p><p class="leto">2024 / 2025</p><p class="tocke">437</p></div>
-                <div><img src="images/testProfilePicture.jpeg" alt=""><p class="ime">Jure Primer</p><p class="leto">2024 / 2025</p><p class="tocke">437</p></div>
-                <div><img src="images/testProfilePicture.jpeg" alt=""><p class="ime">Jure Primer</p><p class="leto">2024 / 2025</p><p class="tocke">437</p></div>
-                <div><img src="images/testProfilePicture.jpeg" alt=""><p class="ime">Jure Primer</p><p class="leto">2024 / 2025</p><p class="tocke">437</p></div>            </div>
+                -->
+            </div>
         </div>
     </section>
     <section id="sec4" class="displayFlex">
