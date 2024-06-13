@@ -297,7 +297,7 @@ header {
     margin: 1rem;
     padding: 1rem;
 
-    width: 25rem;
+    width: fit-content;
     height: 4rem;
 
     border-radius: 8px;
@@ -306,7 +306,7 @@ header {
     margin: auto 0;
     margin-left: 0.5rem;
     margin-right: 1rem;
-    width: 15%;
+    width: 4rem;
     border-radius: 100vw;
 
     display: block;
