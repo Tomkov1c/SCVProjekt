@@ -62,7 +62,7 @@ body {
     user-select: none;
 }
 #sectionL > .bottom {
-    margin: auto 15% 0% 15% !important;
+    margin: auto 10% 0% 10% !important;
 
 }
 #sectionL > #active {
@@ -143,7 +143,9 @@ body {
     
     }
     
-    #sectionL > .bottom,
+    #sectionL > .bottom {
+        margin: auto 15% 0% 15% !important;
+    }
     #sectionL > button {
         width: 70%;
         margin: 0.5rem auto;
