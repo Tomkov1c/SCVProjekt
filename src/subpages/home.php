@@ -1,3 +1,7 @@
+<?php
+require_once '../povezava.php';
+session_start(); 
+?>
 <!DOCTYPE html>
 <html lang="en" id="darmModeID">
 <head>
@@ -9,14 +13,68 @@
     <title>Nadzorna Plošča</title>
 </head>
 <body>
+<?php
+    if(isset($_SESSION['emso']) && $_SESSION['stat'] == true)
+    {
+        // Query to get the class
+        $query = "SELECT r.razred 
+                  FROM dijaki d 
+                  JOIN razredi_dijaki rd ON d.id_di = rd.id_di 
+                  JOIN razredi r ON rd.id_r = r.id_r 
+                  WHERE d.emso = '".$_SESSION['emso']."'";
+    
+        $result = mysqli_query($conn, $query);
+
+        if (mysqli_num_rows($result) > 0) 
+        {
+            $row = mysqli_fetch_assoc($result);
+            $_SESSION['razred'] = $row['razred'];
+        } 
+        else
+        {
+            echo "<h2>Razred: Ni podatka</h2>";
+        }
+
+        
+        $query_teacher = "SELECT u.ime, u.priimek
+                          FROM razredi r
+                          JOIN razredniki rz ON r.id_r = rz.id_r
+                          JOIN ucitelji u ON rz.id_u = u.id_u
+                          JOIN razredi_dijaki rd ON r.id_r = rd.id_r
+                          JOIN dijaki d ON rd.id_di = d.id_di
+                          WHERE d.emso = '".$_SESSION['emso']."'";
+
+        $result_teacher = mysqli_query($conn, $query_teacher);
+
+        if (mysqli_num_rows($result_teacher) > 0) 
+        {
+            $row_teacher = mysqli_fetch_assoc($result_teacher);
+            $teacher_name = $row_teacher['ime'] . ' ' . $row_teacher['priimek'];
+        } 
+        else
+        {
+            $teacher_name = "Ni podatka";
+        }
+
+        $query_stdosezkov = "SELECT COUNT(*) FROM dijaki_dosezki WHERE id_di = (SELECT id_di FROM dijaki WHERE emso = '".$_SESSION['emso']."')";
+        $result_stdosezkov = mysqli_query($conn, $query_stdosezkov);
+
+        $stdosezkov = mysqli_fetch_array($result_stdosezkov);
+    }
+    else
+    {
+        echo "EMSO NI";
+    }
+    ?>
     <div class="studentStats">
         <img src="../images/testProfilePicture.jpeg" alt="Loading">
         <div>
-            <p>Jure Primer <span>3TRB</span></p>
-            <p>Razrednik: <span>Miran Zevnik</span></p>
-            <p>Število dosežkov: <span>15</span></p>
+        <p class="name"><?php echo $_SESSION['uname']. ' ' .$_SESSION['razred']. " ";?></p>
+        <p>RAZREDNIK: <span><?php echo $teacher_name; ?></span></p>
+        <p>ŠTEVILO DOSEŽKOV: <span><?php echo $stdosezkov[0]; ?> </span></p>
         </div>
     </div>
+    
     <div class="googleSideSwitch">
         <input type="radio" id="radio1" name="tabs" checked />
         <label for="radio1" class="tab">2023 / 2024</label>
@@ -27,8 +85,6 @@
         <input type="radio" id="radio3" name="tabs" />
         <label for="radio3" class="tab">2022 / 2023</label>
     </div>
-
-
 </body>
 <script src="../script/darkMode.js"></script>
 </html>

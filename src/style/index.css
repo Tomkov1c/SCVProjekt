@@ -26,6 +26,7 @@ body {
     /* background-attachment: fixed; */
 
     overflow: hidden;
+
 }
 a {
     text-decoration: none;
@@ -43,6 +44,8 @@ section {
     margin-left: 5vw;
     margin-right: 5vw;
     height: fit-content;
+
+    padding: 10rem 0;
 
     scroll-behavior: smooth;
     scroll-snap-type: center;
@@ -107,7 +110,7 @@ header {
 }
 
 #sec1 {
-    margin-bottom: 10rem;
+    padding-top: 1rem;
 }
 #sec1 > h1 {
     display: block;
@@ -182,7 +185,7 @@ header {
     /* background-color: var(--colorAccent); */
 
     width: calc(90vw - 4rem);
-    padding: 2rem;
+    padding: 0 2rem;
     margin-top: 3rem;
 
     border-radius: 22px;
@@ -236,7 +239,6 @@ header {
     background-color: var(--colorAccent);
     border-radius: 7px;
     padding: 2rem;
-    margin-bottom: 4rem;
 
     width: calc(90vw - 2*2vw);
 }
@@ -366,6 +368,10 @@ header {
     white-space: nowrap;
 }
 
+#sec4 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
 #sec4 > h1 {
     margin: auto auto;
     width: 50%;
@@ -427,5 +433,34 @@ header {
 
 footer {
     background-color: var(--colorTerciary);
-    height: 30vh;
+    height: 12rem;
+
+    padding: 1rem 5vw;
+}
+footer > div {
+    height: 100%;
+    width: calc((100% / 3) - 2vw);
+    margin: 0 1vw;
+}
+footer > div > img {
+    height: 60%;
+    display: block;
+    margin: calc((100% - 60%) / 2) auto;
+    margin-top: calc(((100% - 60%) / 2) - 2rem);
+}
+footer > div > a {
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    margin: 0.25rem 0;
+
+    text-decoration: underline;
+    text-decoration-color: var(--colorText);
+    text-decoration-thickness: 0.05rem;
+
+    transition: color 0.2s ease-in-out, text-decoration-color 0.2s ease-in-out;
+}
+footer > div > a:hover {
+    color: var(--colorPrimary);
+    text-decoration-color: var(--colorPrimary);
 }

@@ -15,11 +15,13 @@ require_once 'povezava.php';
 <header id="header">
     <img alt="" src="images/Logos/SCV.svg" id="SCV">
     <div id="headerPointers">
-        <a href="#sec2" class="headerPointerButton">Kaj omogoča?</a>
+        <a href="#sec1" class="headerPointerButton">Prijava</a>
+        <a href="#sec2" class="headerPointerButton">Kaj omogoča</a>
         <a href="#sec3" class="headerPointerButton">Top dijaki</a>
+        <a href="#sec4" class="headerPointerButton">Razvijalci</a>
     </div>
 </header>
-<body>
+<body id="body">
     <section id="sec1">
         <h1>Dosežki tukaj,</h1>
         <h1>tam in</h1>
@@ -77,6 +79,30 @@ require_once 'povezava.php';
 
     <img id="blob" src="images/blobprojects.png"></img>
 </body>
+<footer class="displayFlex">
+    <div>
+        <img src="images/Logos/SCV.svg" alt="Loading...">
+    </div>
+    <div>
+        <h3>Povezave</h3>
+        <a href="https://www.scv.si/">Šolski Center Velenje</a>
+        <a href="https://www.scv.si/">Šolski Center Velenje</a>
+        <a href="https://www.scv.si/">Šolski Center Velenje</a>
+    </div>
+    <div>
+        <h3>Naslov</h3>
+        <p>Šolski center Velenje
+        <br>Trg mladosti 3,
+        <br>3320 Velenje</p>
+
+        <br>
+        <br>
+
+        <p>03 89 60 600</p>
+        <p>03 89 60 660</p>
+    </div>
+    
+</footer>
 <script src="script/headerScroll.js"></script>
-<script src="script/blob.js"></script>
+<!-- <script src="script/blob.js"></script> -->
 </html>

@@ -51,7 +51,7 @@ require_once 'povezava.php';
             ?>
         </div>
         <div id="sideR">
-            <img src="images/ers.jpg">
+
         </div>
     </section>
 
@@ -181,11 +181,8 @@ if(isset($_SESSION['emso']))
             echo "<h2>Razred: Ni podatka</h2>";
         }
     }
-    else
-    {
-        echo "EMSO NI";
-    }
+    
 
-    $_SESSION['admin'] = false;
+    $_SESSION['admin'] = true;
 
-    ?>
+?>
