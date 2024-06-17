@@ -26,6 +26,8 @@ body {
     /* background-attachment: fixed; */
 
     overflow: hidden;
+    min-width: 100vw !important;
+    max-width: 100vw !important;
 
 }
 a {
@@ -87,7 +89,7 @@ header {
     transition: border-bottom ease-in-out 0.2s, background-color ease-in-out 0.2s;
 }
 #SCV {
-    height: 8vh;
+    height: 4.5rem;
     margin-left: 5vw;
     margin-top: 2vh;
     -webkit-filter: (1) invert(1);
@@ -463,4 +465,13 @@ footer > div > a {
 footer > div > a:hover {
     color: var(--colorPrimary);
     text-decoration-color: var(--colorPrimary);
+}
+
+
+
+
+
+/*      Phone        */
+@media (orientation: portrait) {
+    
 }

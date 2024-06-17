@@ -10,7 +10,7 @@ html {
 }
 body {
     display: inline-flex;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
 }
 
@@ -116,7 +116,7 @@ body {
     position: relative;
     overflow-x: hidden;
 
-    width: 79vw;
+    width: calc(100% - (15vw + 2rem));
     height: 89vh;
 
     margin: 1rem;

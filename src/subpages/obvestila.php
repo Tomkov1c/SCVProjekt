@@ -16,6 +16,7 @@
         <img src='../images/testProfilePicture.jpeg' alt='Loading'>
         <p class='name'>Jure Primer <span>voluptatibus blanditiis harum</span></p>
         <input type='submit' value='Submit'>
+        <input type='submit' value='Submit'>
     </div>
 </body>
 <script src="../script/darkMode.js"></script>

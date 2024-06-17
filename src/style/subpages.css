@@ -3,6 +3,7 @@
     padding: 0 0 0 0;
 }
 body {
+    width: calc(100% - 0.6rem) !important;
     display: block;
 
     padding: 0.3rem;
@@ -53,7 +54,7 @@ li {
 .highlightRow {
     display: flex;
 
-    width: 96.5%;
+    width: calc(100% - 3rem);
     height: 3rem;
 
     padding: 1.5rem;
@@ -66,6 +67,14 @@ li {
     height: 100%;
 
     border-radius: 999vw;
+
+}
+.highlightRow > i {
+    display: block;
+    font-size: 2rem;
+    color: var(--colorPrimary);
+
+    margin: auto 0;
 
 }
 .highlightRow > .name {
@@ -278,8 +287,10 @@ form > .display_inline_flex > input:focus {
 	border-bottom: var(--colorSecondary) 1px solid;
 }
 
-.googleSideSwitch > input[type="radio"] {
-	display: none;
+.googleSideSwitch > input[type="submit"] {
+	display: none !important;
+    width: 0rem;
+    height: 0rem;
 }
 
 .googleSideSwitch > label {
@@ -316,6 +327,7 @@ form > .display_inline_flex > input:focus {
 
     padding: 1.5rem;
     border-radius: 7px;
+    width: calc(100% - 3rem);
 
     height: fit-content;
 }
@@ -353,6 +365,12 @@ form > .display_inline_flex > input:focus {
     font-size: 1rem;
     font-family: Mulish;
     font-size: 900;
+}
+.studentStats + div > h3:first-of-type{
+    margin-top: 5rem;
+}
+.studentStats + div > h3{
+    margin-top: 2rem;
 }
 
 form > select {

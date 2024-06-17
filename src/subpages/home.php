@@ -60,11 +60,14 @@ session_start();
         $result_stdosezkov = mysqli_query($conn, $query_stdosezkov);
 
         $stdosezkov = mysqli_fetch_array($result_stdosezkov);
+
+
     }
     else
     {
         echo "EMSO NI";
     }
+
     ?>
     <div class="studentStats">
         <img src="../images/testProfilePicture.jpeg" alt="Loading">
@@ -75,15 +78,17 @@ session_start();
         </div>
     </div>
     
-    <div class="googleSideSwitch">
-        <input type="radio" id="radio1" name="tabs" checked />
-        <label for="radio1" class="tab">2023 / 2024</label>
-
-        <input type="radio" id="radio2" name="tabs" />
-        <label for="radio2" class="tab">2022 / 2023</label>
-
-        <input type="radio" id="radio3" name="tabs" />
-        <label for="radio3" class="tab">2022 / 2023</label>
+    <div>
+        <h3>2024-2025</h3>
+        <div class="highlightRow">
+            <i class="fa-solid fa-medal"></i>
+            <p class='name'>Kenguru<span>jwerfiwuriuweioruusduidsu</span></p>
+        </div>
+        <h3>2023-2024</h3>
+        <div class="highlightRow">
+            <i class="fa-solid fa-medal"></i>
+            <p class='name'>Jure Primer <span>voluptatibus blanditiis harum</span></p>
+        </div>
     </div>
 </body>
 <script src="../script/darkMode.js"></script>
