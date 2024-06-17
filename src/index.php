@@ -31,18 +31,19 @@ require_once 'povezava.php';
     </section>
     <section id="sec2">
         <div>
-            <h1 class="sectionTitle"><i class="fa-solid fa-circle-info"></i>Kaj omogoča?</h1>
-            <h2>Dijaki / Dijakinje</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <h2>Profesorji / Profesorice</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+            <h1 class="sectionTitle"><i class="fa-solid fa-circle-info"></i>Kaj omogoča</h1>
+            <h2>dijakom / dijakinjam?</h2>
+            <p>Spremljanje svojih dosežkov skozi vsa leta izobraževanja. Poglejte si uspeh svojih sošolcev in "tekmujte". Profesorje / mentorje opozorite na pozabljen vpis.</p>
+            <h2>profesorjem / profesoricam?</h2>
+            <p>Vpisovanje dosežkov posameznim dijakom katerim ste mentor / mentorica. Če pa na to pozabite vas lahko dijaki na to tudi opozorijo in to lahko tudi spremljate v tej aplikaciji, pod zavihkom "Obvestila".</p>
+            <h2>vsem uporabnikom?</h2>
+            <p>Temni način za lažjo vidljivost. Preprosta uporaba. Vpis s EMŠO ali Microsoft računom.</p>
         </div>
         <img src="images/graduation.jpg">
     </section>
     <section id="sec3">
         <h1 class="sectionTitle"><i class="fa-solid fa-book-open-reader"></i>Top dijaki</h1>
-        <p>Quae culpa alias omnis ea blanditiis sint obcaecati exercitationem porro, distinctio quibusdam suscipit voluptatibus veniam repellendus beatae, beatae ratione deserunt sapiente hic, quam assumenda voluptatibus ipsa nulla veritatis dignissimos?</p>
+        <p>Spoznajte naše najboljše dijake, ki s svojo predanostjo, znanjem in dosežki izstopajo med svojimi vrstniki. Ti nadarjeni posamezniki ne le dosegajo odlične rezultate, temveč tudi navdihujejo druge s svojo strastjo do učenja in dosežkov na različnih področjih. Odkrijte, kako se izstopajo in kaj jih dela edinstvene v naši skupnosti.</p>
         <div>
             <div>
                 <?php

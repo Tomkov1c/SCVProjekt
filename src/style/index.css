@@ -260,10 +260,10 @@ header {
     color: var(--colorBackground);
 }
 #sec3 > p {
-    margin: 0 auto;
-    width: 100%;
+    display: block;
+    width: 70%;
     text-align: center;
-    margin: 1rem 0;
+    margin: 1rem auto;
 
     color: var(--colorBackground);
     opacity: 0.8;
