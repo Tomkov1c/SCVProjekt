@@ -29,7 +29,7 @@ require_once 'povezava.php';
         <p>Sledite svojim akademskim dosežkom kjerkoli in kadarkoli</p>
         <a href="prijava.php"><i class="fa-solid fa-right-to-bracket"></i><p>Prijava</p></a>
     </section>
-    <section id="sec2" class="displayFlex">
+    <section id="sec2">
         <div>
             <h1 class="sectionTitle"><i class="fa-solid fa-circle-info"></i>Kaj omogoča?</h1>
             <h2>Dijaki / Dijakinje</h2>
@@ -66,7 +66,7 @@ require_once 'povezava.php';
             </div>
         </div>
     </section>
-    <section id="sec4" class="displayFlex">
+    <section id="sec4">
         <h1 class="sectionTitle"><i class="fa-solid fa-code"></i></i>Razvijalci</h1>
         <div>
             <a target="_blank" href="https://github.com/Tomkov1c"><img src="https://avatars.githubusercontent.com/u/83597418?v=4"><div><h1>Tom Kliner</h1><p>Dezajn, Frontend</p></div></a>
@@ -79,7 +79,7 @@ require_once 'povezava.php';
 
     <img id="blob" src="images/blobprojects.png"></img>
 </body>
-<footer class="displayFlex">
+<footer>
     <div>
         <img src="images/Logos/SCV.svg" alt="Loading...">
     </div>
