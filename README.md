@@ -19,6 +19,7 @@
 - **Podstrani**
 	- [x] Dom
 	- [x] Admin
+	- [x] Pogled
 	- [x] Vnos
 	- [x] Nastavitve
 	- [ ] Obvestila
