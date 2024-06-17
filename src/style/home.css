@@ -62,7 +62,7 @@ body {
     user-select: none;
 }
 #sectionL > .bottom {
-    margin: auto 10% 0% 10% !important;
+    margin: auto 15% 0% 15% !important;
 
 }
 #sectionL > #active {
@@ -132,4 +132,34 @@ body {
 
     border-radius: 14px;
 
+}
+
+
+
+
+@media (orientation: portrait) {
+    #sectionL {   
+        width: 7rem;
+    
+    }
+    
+    #sectionL > .bottom,
+    #sectionL > button {
+        width: 70%;
+        margin: 0.5rem auto;
+    }
+    #sectionL > .bottom > p,
+    #sectionL > #active > p,
+    #sectionL > button > p,
+    #sectionL > button > a {
+        color: transparent;
+        display: none;
+    }
+    #sectionL > .bottom > i,
+    #sectionL > #active > i,
+    #sectionL > button > i {
+        display: block;
+        margin: auto auto;
+        width: fit-content;
+    }
 }

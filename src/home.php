@@ -15,7 +15,7 @@
         <button onclick="switchSub('subpages/vnos.php', this)"><i class="fa-solid fa-i-cursor"></i><p>Vnos</p></button>
         <button onclick="switchSub('subpages/pogled.php', this)"><i class="fa-solid fa-eye"></i><p>Pogled</p></button>
         <button onclick="switchSub('subpages/obvestila.php', this)"><i class="fa-solid fa-bullhorn"></i><p>Obvestila</p></button>
-        <button onclick="switchSub('subpages/vnosDosezka.html', this)"><i class="fa-solid fa-sheet-plastic"></i><p>Vnos Dosežka</p></button>
+        <!-- <button onclick="switchSub('subpages/vnosDosezka.html', this)"><i class="fa-solid fa-sheet-plastic"></i><p>Vnos Dosežka</p></button> -->
 
         <!-- <button onclick="switchSub('subpages/razred.html', this)"><i class="fa-solid fa-compass-drafting"></i><p>3. TRB</p></button>
         <button><i class="fa-solid fa-compass-drafting"></i><p>3. TRA</p></button> -->
@@ -38,6 +38,5 @@
     </section>
 </body>
 <script src="script/darkMode.js"></script>
-<script src="script/devMenu.js"></script>
 <script src="script/subpageSwitch.js"></script>
 </html>
