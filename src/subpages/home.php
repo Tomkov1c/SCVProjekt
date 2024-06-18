@@ -101,7 +101,6 @@ session_start();
                     <i>08.09.2023</i>
                 </div>
                 <h1>Razvedrilna Matematika</h1>
-                <p>Kao opis al pa neke. (potional)    Distinctio rem quaerat quo cupiditate recusandae veniam cum labore, est perspiciatis necessitatibus nesciunt nemo officiis nobis voluptates molestiae facilis fuga quaerat, nobis aperiam repudiandae?</p>
             </div>
             <div>
                 <p>Srebrno Priznanje</p>
@@ -116,6 +115,9 @@ session_start();
                     <i>08.09.2023</i>
                 </div>
                 <h1>Razvedrilna Matematika</h1>
+                <p>Kao opis al pa neke. (potional)    Distinctio rem quaerat quo cupiditate recusandae veniam cum labore, est perspiciatis necessitatibus nesciunt nemo officiis nobis voluptates molestiae facilis fuga quaerat, nobis aperiam repudiandae?</p>
+                <p>Kao opis al pa neke. (potional)    Distinctio rem quaerat quo cupiditate recusandae veniam cum labore, est perspiciatis necessitatibus nesciunt nemo officiis nobis voluptates molestiae facilis fuga quaerat, nobis aperiam repudiandae?</p>
+                <p>Kao opis al pa neke. (potional)    Distinctio rem quaerat quo cupiditate recusandae veniam cum labore, est perspiciatis necessitatibus nesciunt nemo officiis nobis voluptates molestiae facilis fuga quaerat, nobis aperiam repudiandae?</p>
                 <p>Kao opis al pa neke. (potional)    Distinctio rem quaerat quo cupiditate recusandae veniam cum labore, est perspiciatis necessitatibus nesciunt nemo officiis nobis voluptates molestiae facilis fuga quaerat, nobis aperiam repudiandae?</p>
             </div>
             <div>
