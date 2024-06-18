@@ -116,6 +116,8 @@ li {
     font-size: 1.5rem;
     font-family: Mulish-Bold;
 
+    white-space: nowrap;
+
     display: block;
     margin: auto 1rem;
     margin-right: 0.5rem;
