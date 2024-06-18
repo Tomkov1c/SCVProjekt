@@ -24,7 +24,12 @@
 	- [x] Nastavitve
 	- [ ] Obvestila
 
-
+- **To do**
+  	 - [ ] pregled priznanj ers - zadostno st tock (3+) = priznanje
+  	 - [ ] datumi -> solsko leto + vnos
+  	 - [ ] na koncu naredi recap, ne smejo videt za nazaj
+  	 - [ ] ucitel lahka vnasa za nazaj
+     
 <br>
 
 ## ⌨️ Developerji
