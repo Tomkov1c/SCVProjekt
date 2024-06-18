@@ -149,7 +149,7 @@ li {
     width: fit-content;
     margin: auto 0;
 
-    height: 10rem;
+    height: fit-content;
 }
 .contribution > div:last-of-type > p {
     display: block;
