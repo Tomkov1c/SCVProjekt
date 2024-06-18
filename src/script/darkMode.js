@@ -1,5 +1,4 @@
 function change() {
-  console.log("change")
   if (sessionStorage.getItem("darkMode") == "dark") {
     sessionStorage.setItem("darkMode", "light");
   }else {
