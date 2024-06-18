@@ -1,8 +1,8 @@
 <?php
 
 $host = 'localhost';
-$user = 'root';
-$password = '';
+$user = 'user';
+$password = 'Forsen123!';
 $db = "dosezki";
 
 $conn = mysqli_connect($host, $user, $password) or die("Povezava ni uspela!");

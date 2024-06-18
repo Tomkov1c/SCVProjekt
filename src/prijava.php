@@ -23,6 +23,7 @@ require_once 'povezava.php';
     $login_url = "https://login.microsoftonline.com/" . $tennantid . "/oauth2/v2.0/authorize";
     session_start();
     session_regenerate_id();
+
     $_SESSION['state'] = session_id();
     ?>
 
@@ -104,7 +105,7 @@ if (array_key_exists ('access_token', $_POST))
             if (isset($resu['onPremisesDistinguishedName'])) {
                 $statusprijave = $resu['onPremisesDistinguishedName'];
 
-                if (str_contains($statusprijave, 'Dijak')){ // ??Mogoce kak boljsi nacin?? (Zaposleni,Dijak)
+                if (str_contains($statusprijave, 'Dijaki')){ // ??Mogoce kak boljsi nacin?? (Zaposleni,Dijak)
                     $_SESSION['stat'] = true;
                 } else {
                     $_SESSION['stat'] = false;
@@ -130,31 +131,38 @@ if (isset($_GET['action']) && $_GET['action'] == 'logout'){
 
 if(isset($_SESSION['email']))
 {
+
     $query = "SELECT emso FROM dijaki WHERE email = '".$_SESSION['email']."'";
     $result = mysqli_query($conn, $query);
-    $_SESSION['emso'] = mysqli_fetch_assoc($result)['emso'];
+    if (mysqli_num_rows($result) > 0) {
+        $_SESSION['emso'] = mysqli_fetch_assoc($result)['emso'];
+    } else {
+        $query = "SELECT emso FROM ucitelji WHERE email = '".$_SESSION['email']."'";
+        $result = mysqli_query($conn, $query);
+        $_SESSION['emso'] = mysqli_fetch_assoc($result)['emso'];
+    }
 }
 
 if(isset($_POST['emso']))
 {
     $_SESSION['emso'] = $_POST['emso'];
     //check if emso exists in database
-    $query = "SELECT ime FROM dijaki WHERE emso = '".$_SESSION['emso']."'";
+    $query = "SELECT * FROM dijaki WHERE emso = '".$_SESSION['emso']."'";
     $result = mysqli_query($conn, $query);
     if (mysqli_num_rows($result) > 0) {
         $row = mysqli_fetch_assoc($result);
         $_SESSION['uname'] = $row['ime'] . " " . $row['priimek'];
-        $_SESSION['stat'] = true;
+        $_SESSION['stat'] = false;
 
         header('Location: home.php');
     }
     else {
-        $query = "SELECT ime FROM ucitelji WHERE emso = '".$_SESSION['emso']."'";
+        $query = "SELECT * FROM ucitelji WHERE emso = '".$_SESSION['emso']."'";
         $result = mysqli_query($conn, $query);
         if (mysqli_num_rows($result) > 0) {
             $row = mysqli_fetch_assoc($result);
             $_SESSION['uname'] = $row['ime'] . " " . $row['priimek'];
-            $_SESSION['stat'] = false;
+            $_SESSION['stat'] = true;
 
             header('Location: home.php');
         } else {
@@ -181,11 +189,8 @@ if(isset($_SESSION['emso']))
             echo "<h2>Razred: Ni podatka</h2>";
         }
     }
-    else
-    {
-        echo "EMSO NI";
-    }
+    
 
     $_SESSION['admin'] = false;
 
-    ?>
+?>
