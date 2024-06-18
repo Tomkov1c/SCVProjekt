@@ -89,7 +89,43 @@ session_start();
             <i class="fa-solid fa-medal"></i>
             <p class='name'>Jure Primer <span>voluptatibus blanditiis harum</span></p>
         </div>
+
     </div>
+    <br></br>
+    <div>
+        <div class="contribution">
+            <div>
+                <div class="displayFlex">
+                    <img src="../images/testProfilePicture.jpeg" alt="">
+                    <p>Mark Kotnik</p>
+                    <i>08.09.2023</i>
+                </div>
+                <h1>Razvedrilna Matematika</h1>
+                <p>Kao opis al pa neke. (potional)    Distinctio rem quaerat quo cupiditate recusandae veniam cum labore, est perspiciatis necessitatibus nesciunt nemo officiis nobis voluptates molestiae facilis fuga quaerat, nobis aperiam repudiandae?</p>
+            </div>
+            <div>
+                <p>Srebrno Priznanje</p>
+                <h1>7</h1>
+            </div>
+        </div>
+        <div class="contribution">
+            <div>
+                <div class="displayFlex">
+                    <img src="../images/testProfilePicture.jpeg" alt="">
+                    <p>Mark Kotnik</p>
+                    <i>08.09.2023</i>
+                </div>
+                <h1>Razvedrilna Matematika</h1>
+                <p>Kao opis al pa neke. (potional)    Distinctio rem quaerat quo cupiditate recusandae veniam cum labore, est perspiciatis necessitatibus nesciunt nemo officiis nobis voluptates molestiae facilis fuga quaerat, nobis aperiam repudiandae?</p>
+            </div>
+            <div>
+                <p>Srebrno Priznanje</p>
+                <h1>7</h1>
+            </div>
+        </div>
+    </div>
+
+
 </body>
 <script src="../script/darkMode.js"></script>
 </html>

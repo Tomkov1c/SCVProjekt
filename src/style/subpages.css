@@ -94,6 +94,78 @@ li {
 
 }
 
+.contribution {
+    display: flex;
+    width: calc(100% - 3rem);
+
+    padding: 1.5rem;
+    margin: 1rem 0;
+
+    border-radius: 7px;
+    background-color: var(--colorSecondary);
+}
+.contribution > div:first-of-type {
+    width: calc(90% - 3rem);
+}
+.contribution > div:first-of-type > .displayFlex > img {
+    width: 2.5rem;
+
+    border-radius: 999vw;
+}
+.contribution > div:first-of-type > .displayFlex > p {
+    font-size: 1.5rem;
+    font-family: Mulish-Bold;
+
+    display: block;
+    margin: auto 1rem;
+    margin-right: 0.5rem;
+}
+.contribution > div:first-of-type > .displayFlex > i {
+    font-size: 1rem;
+    font-family: Mulish-Light;
+    color: var(--colorText);
+
+    display: block;
+    margin: auto 0;
+}
+.contribution > div:first-of-type > h1 {
+    font-size: 2.5rem;
+    font-family: Mulish;
+    color: var(--colorText);
+
+    display: block;
+    margin: 1rem 0 0;
+}
+.contribution > div:first-of-type > p {
+    font-size: 1rem;
+    font-family: Mulish-Light;
+    color: var(--colorText);
+
+    font-style: italic;
+}
+.contribution > div:last-of-type {
+    display: block;
+    padding: 0 1rem;
+    width: fit-content;
+}
+.contribution > div:last-of-type > p {
+    display: block;
+    margin: 3rem auto 0.5rem;
+
+    width: fit-content;
+    font-size: 1rem;
+}
+.contribution > div:last-of-type > h1 {
+    display: block;
+    margin: auto auto 1rem;
+
+    font-size: 3.5rem;
+    width: fit-content;
+}
+
+
+
+
 .submenuSplitSelect {
     display: flex;
 }
