@@ -18,14 +18,16 @@ body {
 
     margin-top: 7rem;
     background-image: radial-gradient(
-        rgba(56, 56, 56, 0.108) 1px, 
-        var(--colorBackground) 1px
+            rgba(56, 56, 56, 0.108) 1px,
+            var(--colorBackground) 1px
     );
     background-position: 50% 50%;
     background-size: 1.1rem 1.1rem;
     /* background-attachment: fixed; */
 
-    overflow: hidden;
+    overflow-x: hidden;
+    position: relative;
+    height: fit-content;
 }
 a {
     text-decoration: none;
@@ -44,21 +46,23 @@ section {
     margin-right: 5vw;
     height: fit-content;
 
+    padding: 10rem 0;
+
     scroll-behavior: smooth;
     scroll-snap-type: center;
 }
 
 #blob {
-	aspect-ratio: 1;
-	position: absolute;
-	left: 120vw;
-	top: 50%;
-	translate: -50% -50%;
-	animation: rotate 10s infinite;
-	opacity: 0.2;
-	z-index: -3;
-	height: 60%;
-	border-radius: 100vw;
+    aspect-ratio: 1;
+    position: absolute;
+    left: 120vw;
+    top: 50%;
+    translate: -50% -50%;
+    animation: rotate 10s infinite;
+    opacity: 0.2;
+    z-index: -3;
+    height: 60%;
+    border-radius: 100vw;
 }
 
 /*      Header       */
@@ -72,7 +76,7 @@ header {
     background-color: transparent;
 
     border-bottom: 1px solid transparent;
-    
+
     transition: border-bottom ease-in-out 0.2s;
 }
 .headerBorder {
@@ -84,7 +88,7 @@ header {
     transition: border-bottom ease-in-out 0.2s, background-color ease-in-out 0.2s;
 }
 #SCV {
-    height: 8vh;
+    height: 4.5rem;
     margin-left: 5vw;
     margin-top: 2vh;
     -webkit-filter: (1) invert(1);
@@ -107,7 +111,7 @@ header {
 }
 
 #sec1 {
-    /* background-color: aqua; */
+    padding-top: 1rem;
 }
 #sec1 > h1 {
     display: block;
@@ -171,15 +175,7 @@ header {
     margin-right: auto;
 
     font-family: Mulish-Bold;
-    
-}
-#sec1 > img {
-    width: 40vw;
 
-    display: block;
-    position: relative;
-    margin: 0 auto;
-    
 }
 
 
@@ -189,8 +185,10 @@ header {
 #sec2 {
     /* background-color: var(--colorAccent); */
 
+    display: flex;
+
     width: calc(90vw - 4rem);
-    padding: 2rem;
+    padding: 0 2rem;
     margin-top: 3rem;
 
     border-radius: 22px;
@@ -224,12 +222,15 @@ header {
     outline: 2px solid var(--colorBackground);
 
     box-shadow: 16px 16px 0px 0px var(--colorSecondary);
+    transform: scale(1);
 
-    transition: box-shadow 0.3s ease-in-out;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 #sec2 > img:hover {
 
     box-shadow: 0px 0px 0px 0px var(--colorSecondary);
+
+    transform: scale(1.03);
 }
 #sec2 > div {
     width: 50%;
@@ -237,13 +238,16 @@ header {
     margin: auto 0;
 }
 
+
+
+
+
 #sec3 {
     background-color: var(--colorAccent);
     border-radius: 7px;
     padding: 2rem;
-    margin-bottom: 4rem;
 
-    width: calc(90vw - 2*2vw);
+    width: calc(90vw - 4rem);
 }
 #sec3 > h1 {
     margin: 0 auto;
@@ -256,10 +260,10 @@ header {
     color: var(--colorBackground);
 }
 #sec3 > p {
-    margin: 0 auto;
-    width: 100%;
+    display: block;
+    width: 70%;
     text-align: center;
-    margin: 1rem 0;
+    margin: 1rem auto;
 
     color: var(--colorBackground);
     opacity: 0.8;
@@ -291,7 +295,7 @@ header {
 #sec3 > div > div {
     display: flex;
     white-space: nowrap;
-    animation: sideScroll 15s linear infinite;
+    animation: sideScroll 40s linear infinite;
     position: relative; /* Ensure content is above the gradient */
     z-index: 0; /* Ensure it overlays the gradient */
 }
@@ -302,7 +306,7 @@ header {
     margin: 1rem;
     padding: 1rem;
 
-    width: 25rem;
+    width: fit-content;
     height: 4rem;
 
     border-radius: 8px;
@@ -311,7 +315,7 @@ header {
     margin: auto 0;
     margin-left: 0.5rem;
     margin-right: 1rem;
-    width: 15%;
+    width: 4rem;
     border-radius: 100vw;
 
     display: block;
@@ -359,10 +363,10 @@ header {
 
 @keyframes sideScroll {
     0% {
-        transform: translateX(0);
+        transform: translateX(20%);
     }
     100% {
-        transform: translateX(-55.5%);
+        transform: translateX(-100%);
     }
 }
 #sec3 > div > div::after {
@@ -371,6 +375,15 @@ header {
     white-space: nowrap;
 }
 
+
+
+
+#sec4 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    display: flex;
+}
 #sec4 > h1 {
     margin: auto auto;
     width: 50%;
@@ -432,5 +445,98 @@ header {
 
 footer {
     background-color: var(--colorTerciary);
-    height: 30vh;
+    height: 12rem;
+
+    padding: 1rem 5vw;
+    display: flex;
+}
+footer > div {
+    height: 100%;
+    width: calc((100% / 3) - 2vw);
+    margin: 0 1vw;
+}
+footer > div > img {
+    height: 60%;
+    display: block;
+    margin: calc((100% - 60%) / 2) auto;
+    margin-top: calc(((100% - 60%) / 2) - 2rem);
+}
+footer > div > a {
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    margin: 0.25rem 0;
+
+    text-decoration: underline;
+    text-decoration-color: var(--colorText);
+    text-decoration-thickness: 0.05rem;
+
+    transition: color 0.2s ease-in-out, text-decoration-color 0.2s ease-in-out;
+}
+footer > div > a:hover {
+    color: var(--colorPrimary);
+    text-decoration-color: var(--colorPrimary);
+}
+
+
+
+
+
+/*      Phone        */
+@media (orientation: portrait) {
+    header {
+        display: none;
+    }
+    #sec2 {
+        /* background-color: var(--colorAccent); */
+
+        display: block;
+
+        width: calc(100% - 4rem);
+        padding: 0;
+    }
+    #sec2 > div {
+        width: 100% !important;
+    }
+    #sec2 > img {
+        width: 90vw;
+        height: 30rem;
+        margin-top: 2rem;
+    }
+
+
+    #sec3 {
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+
+        border-radius: 12px;
+    }
+
+
+    #sec4 {
+        display: block;
+
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+    }
+    #sec4 > h1 {
+        width: fit-content;
+    }
+    #sec4 > div {
+        width: 100%;
+    }
+    footer {
+        display: none;
+    }
+
+}
+@media screen and (max-width: 770px) {
+    #sec1 > h1 {
+        font-size: 5rem;
+        line-height: 5.5rem;
+    }
+    .sectionTitle {
+        font-size: 3rem;
+    }
+
 }

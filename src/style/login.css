@@ -169,5 +169,11 @@ hr {
 #sideR {
     width: 50%;
 
-    background-color: var(--colorPrimary);
+    background-color: #0095d9;
+}
+#sideR > img {
+    height: 50%;
+    display: block;
+
+    margin: 35% auto;
 }
