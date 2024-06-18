@@ -35,10 +35,12 @@ body {
     border-radius: 8px;
 
     overflow-y: auto;
+    overflow-x: hidden;
 
 }
 
-#sectionL > button {
+#sectionL > button,
+#sectionL > a {
     display: flex;
     position: relative;
 
@@ -51,6 +53,7 @@ body {
     background-color: transparent;
     border: 0 solid transparent;
     border-radius: 7px;
+    text-decoration: none;
 
     cursor: pointer;
 
@@ -58,6 +61,7 @@ body {
 
     opacity: 50%;
 }
+#sectionL > a > p
 #sectionL > button > p  {
     user-select: none;
 }
@@ -77,6 +81,7 @@ body {
     color: var(--colorBackground);
 
 }
+#sectionL > a > i,
 #sectionL > button > i {
     display: block;
 
@@ -89,7 +94,7 @@ body {
     transition: color ease-in-out 0.1s;
 }
 #sectionL > button > p,
-#sectionL > button > a {
+#sectionL > a > p {
     display: block;
 
     font-size: 1rem;
@@ -102,6 +107,7 @@ body {
     transition: color ease-in-out 0.1s;
 
 }
+#sectionL > a:hover,
 #sectionL > button:hover {
     opacity: 100%;
 }
@@ -153,12 +159,13 @@ body {
     #sectionL > .bottom > p,
     #sectionL > #active > p,
     #sectionL > button > p,
-    #sectionL > button > a {
+    #sectionL > a > p {
         color: transparent;
         display: none;
     }
     #sectionL > .bottom > i,
     #sectionL > #active > i,
+    #sectionL > a > i,
     #sectionL > button > i {
         display: block;
         margin: auto auto;

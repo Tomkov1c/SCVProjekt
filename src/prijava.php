@@ -51,14 +51,9 @@ require_once 'povezava.php';
             ?>
         </div>
         <div id="sideR">
-
+            <img src="../images/ers.jpg" alt="">
         </div>
     </section>
-
-        <div class="theForm-R">
-
-        </div>
-    </div>
     </body>
     </html>
     <script src="script/darkMode.js"></script>

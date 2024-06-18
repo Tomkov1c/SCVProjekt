@@ -141,7 +141,7 @@ hr {
     cursor: pointer;
 }
 #microsoftPrijava > img {
-    width: 2vw;
+    width: 2rem;
     display: block;
 
     margin: auto 0;
@@ -176,4 +176,34 @@ hr {
     display: block;
 
     margin: 35% auto;
+}
+
+
+
+@media (orientation: portrait) {
+    body > section {
+        display: flex;
+        flex-direction: column;
+
+        margin: 20vh 15vw;
+
+        height: fit-content;
+    }
+    #sideL {
+        --width: 100%;
+        display: block;
+
+        width: calc(var(--width) - var(--padding) - var(--padding));
+    }
+    #sideL > form > .inputField {
+        padding-left: 2rem;
+        width: calc(100% - 2rem);
+    }
+    
+    /*                  */
+    #sideR {
+        display: none;
+    }
+        
+
 }

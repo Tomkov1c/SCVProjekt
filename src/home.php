@@ -28,7 +28,7 @@
         ?>
         <!--Bottom-->
         <button onclick="switchSub('subpages/nastavitve.html', this)" class="bottom"><i class="fa-solid fa-gear"></i><p>Nastavitve</p></button>
-        <button><i class="fa-solid fa-right-from-bracket" ></i><a href="prijava.php?action=logout">Izpis</a></button>
+        <a href="prijava.php?action=logout"><i class="fa-solid fa-right-from-bracket" ></i><p>Izpis</p></a>
     </section>
     <section id="sectionR">
         <iframe id="iframe" src="subpages/home.php" data-theme="dark" frameborder="0" sandbox="allow-same-origin allow-scripts allow-forms">
